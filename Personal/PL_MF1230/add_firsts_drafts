@@ -1,0 +1,11 @@
+(define (add-firsts x y) (+ (car(x)) (car(y))))
+
+(define (add-firsts x y) ( + (car x) (car y) ) )
+
+(define (add-firsts input1 input2) (+ car input1 input2))
+
+(define (add-firsts x y) (+ (car '(x)) (car '(y)))
+
+define (add-firsts (+ car() car()))
+
+

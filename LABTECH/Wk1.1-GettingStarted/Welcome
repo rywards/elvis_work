@@ -1,0 +1,12 @@
+
+#! /bin/bash
+#
+#Jake Levy
+#  A simple script to welcome the Student to the class
+# and for them to practice executing a program and specifying the current
+# directory
+#
+declare -r currentStudent=$(whoami)
+echo ""
+echo  "Welcome to Lab Techniques $currentStudent...This should be interesting"
+echo ""

@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Using $(), we can run a command and collect the output
+# This works even with commands that are pipes.
+
+for file in *
+do
+    filetime=$(stat $file | grep -i modify | sed 's/[^:]*://')
+
+    echo $filetime " -- "  $file
+done

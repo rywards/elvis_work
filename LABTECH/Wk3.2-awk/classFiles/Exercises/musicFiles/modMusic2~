@@ -1,0 +1,22 @@
+#! /bin/awk -f
+
+# a version of what we just did on the command line
+#but now in an "interpreted" awk script.  Basically
+# we are now writing files that will be read by the
+#awk interpreter and run by it directly rather than
+#using the shell to call it
+
+BEGIN{
+    FS = "\t";
+ 
+}
+NR == 1{
+    
+    print "#\t" $2 $1 $5
+}
+NR > 1{
+    OFS="\t";
+    sum+=1
+    print $NR-1":\t"$2 $1 $5
+}
+END{print sum}

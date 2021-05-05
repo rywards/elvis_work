@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# This command turns on extra debugging information;
+# every command is printed before it is run, with variables
+# expanded.
+# Complex commands are printed out on piece at a time.
+set -o xtrace
+
+# Compare this script with bash_verbose
+
+for x in *
+
+    echo $x
+done

@@ -1,0 +1,59 @@
+Script started on 2021-04-02 13:31:29-04:00 [TERM="xterm" TTY="/dev/pts/290" COLUMNS="67" LINES="37"]
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+]0;edward74@elvix2:~/Personal/PrologLab1[edward74@elvis PrologLab1]$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.2.3)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [family[11G][4G[12G.
+[1mtrue.[0m
+
+?- grandparent(hazel, ryan[27G)[15G[28G.
+[1mtrue [0m[1m;[0m
+[1;31mfalse.[0m
+
+?- grandparent(ryan, hazel[27G)[15G[28G.
+[1;31mfalse.[0m
+
+?- child(rachel, scott[23G)[9G[24G.
+[1mtrue.[0m
+
+?- s?- [Kchild(scott, sarah[22G)[9G[23G.
+[1;31mfalse.[0m
+
+?- child(sarah, scott[22G)[9G[23G.
+[1mtrue.[0m
+
+?- chl[6G[Kild(ryan, andrea[22G)[9G[23G.
+[1mtrue [0m[1m;[0m
+[1;31mfalse.[0m
+
+?- inlaw(scott, jamie[22G)[9G[23G.
+[1mtrue.[0m
+
+?- inlaw,[9G[K(jamie, scott[22G)[9G[23G.
+[1;31mfalse.[0m
+
+?- sibling(andrea, scott[25G)[11G[26G.
+[1;31mfalse.[0m
+
+?- sibling(ryan, rachel[24G)[11G[25G.
+[1mtrue [0m[1m;[0m
+[1mtrue.[0m
+
+?- sibling(jamie, rachel[24G[K[23G[K[22G[K[21G[K[20G[Kyan[23G)[11G[24G.
+[1;31mfalse.[0m
+
+?- sibling(sarah, rachel[25G)[11G[26G.
+[1mtrue [0m[1m;[0m
+[1mtrue.[0m
+
+?- halt.
+]0;edward74@elvix2:~/Personal/PrologLab1[edward74@elvis PrologLab1]$ exit
+
+Script done on 2021-04-02 13:34:47-04:00 [COMMAND_EXIT_CODE="0"]

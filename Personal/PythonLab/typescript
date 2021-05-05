@@ -1,0 +1,24 @@
+Script started on 2021-04-23 13:04:52-04:00 [TERM="xterm" TTY="/dev/pts/133" COLUMNS="67" LINES="37"]
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+]0;edward74@elvix2:~/Personal/PythonLab[edward74@elvis PythonLab]$ ./pythonlab.py
+jumped
+laughed
+ran
+planned
+shopped
+bought
+followed
+agreed
+changed
+decided
+copied
+studied
+panicked
+attacked
+played
+mimicked
+]0;edward74@elvix2:~/Personal/PythonLab[edward74@elvis PythonLab]$ exit
+
+Script done on 2021-04-23 13:05:01-04:00 [COMMAND_EXIT_CODE="0"]

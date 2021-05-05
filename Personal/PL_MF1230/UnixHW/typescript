@@ -1,0 +1,18 @@
+Script started on 2021-01-25 13:43:50-05:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="60" LINES="24"]
+[1melvix2 1% [0mpwd
+/home/nlt/PL_S21/PL_MF1230/UnixHW
+[1melvix2 2% [0mls -ls
+total 4
+4 -rw-r--r-- 1 nlt domain users 89 Jan 25 13:43 about_me.txt
+0 -rw-r--r-- 1 nlt domain users  0 Jan 25 13:43 typescript
+[1melvix2 3% [0mcat about_me.txt 
+Dr. Tinkham
+she/her
+logic programming
+Duo
+martial arts
+A Civil Campaign
+Cape Cod - beach
+[1melvix2 4% [0mexit
+
+Script done on 2021-01-25 13:44:17-05:00 [COMMAND_EXIT_CODE="0"]

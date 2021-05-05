@@ -1,0 +1,65 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2020.04.07.12.43.56;	author edward74;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.04.07.12.38.48;	author edward74;	state Exp;
+branches;
+next	;
+
+
+desc
+@This is the main file for the trig program
+@
+
+
+1.2
+log
+@corrected tangent declaration
+@
+text
+@/* main.c - main section of "trig" project
+ *
+ * DFP
+ */
+
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+  double angle;
+  void sine(double), cosine(double), tangent(double);
+
+  if (argc < 2) {
+      angle = 45.0;
+  } else {
+      //angle = (double) atof(argv[1]);
+      angle = strtod(argv[1], NULL);
+  }
+
+  sine(angle);
+  cosine(angle);
+  tangent(angle);
+
+  return 0;
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d11 1
+a11 1
+  void sine(double), cosine(double), tangen(double);
+@

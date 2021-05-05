@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#sample script solution for Task 4-1 Learning the Bash Shell, 3rd. Ed
+# Jake Levy
+# 4-21-19
+# Demonstrates how to use positional parameters with string subsitution
+# ${variable:-word}  if the variable is non-existent or null (empty string)
+# then this expression will replace the variable with the word
+
+#Since positional parameters are always null if you didn't pass them in
+#we have effectively set a "default" value for the second positional param
+
+ sort $1 -k1rn,1 | head -${2:-4}

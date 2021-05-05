@@ -1,0 +1,36 @@
+#! /bin/bash
+
+# counting script
+
+# NOTE: bash variables are not typed!
+# If you use the standard symbols, such as < > and so on,
+# you get string comparison.
+# For numeric comparison, you can use one of:
+#
+#    a) two-letter symbols: -lt, -gt, -le, -ge, -eq, -ne
+# or
+#    b) put the expression in double parens
+
+
+# NOTE: use $ to get a value, but no $ when you set a value
+
+let i=1  # no space around "="
+
+while [ $i -le 10 ]; # note square brackets around test
+do
+	echo $i
+	let i+=1  # no spaces around +=
+done
+
+
+# double-parens not only indicate mathematical operations, they also
+# let you space things out.
+
+((i = 1 ))
+
+while (( $i <= 10 )) # note double parens
+do
+    echo $i
+	(( i += 1 ))     # spaces okay here
+done
+

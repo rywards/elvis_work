@@ -1,0 +1,44 @@
+/*
+ * Going through a C programming tutorial.
+ */
+
+#include <stdio.h>
+
+int main(){
+
+  double userEntry = 0;
+  double sum = 0;
+  double mean = 0;
+  double min = 0;
+  double max = 0;
+  
+  int counter = 0;
+
+  // %lf reads in doubles
+  do{
+
+    printf("Enter a number: \n");
+    scanf("%d", &userEntry);
+
+      if (userEntry > max && userEntry > min){
+	
+	max = userEntry;
+      }
+      if (userEntry < min && userEntry < max){
+
+	min = userEntry;
+      }
+      
+      sum = sum + userEntry;
+      counter++;
+
+      mean = sum/counter;
+  }while (userEntry !=0);
+
+    printf("The sum is: %d\n", sum);
+    printf("The mean is: %d\n", mean);
+    printf("The min is: %d\n", min);
+    printf("The max is: %d\n", max);
+    
+  return 0;
+}

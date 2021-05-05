@@ -1,0 +1,23 @@
+#! /bin/bash
+
+# dirempty - check if directory is empty
+#
+# D. Provine, 17 Nov 2011
+
+# Check for right number of arguments
+if (( $# != 1 )); then
+    echo "usage: dirempty dir"
+    exit
+fi
+
+# check $1 is a folder
+if [ -d $1 ]; then
+    (( filecount = $(/bin/ls -1 $1 | wc -l) ))
+    if (( $filecount == 0 )); then
+        echo $1 is empty
+    else
+        echo $1 has $filecount files in it
+    fi
+else
+    echo $1 is not a directory
+fi

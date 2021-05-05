@@ -1,0 +1,206 @@
+Some notes on the basics of C programming.
+
+Data Types available in C:
+
+     	Chars
+	Ints
+	Floats
+	Longs Floats (doubles)
+	Long Ints
+	enums
+
+********Libraries**********
+'#include some Library' statement  is used to include the various libraries
+or packages you want to use
+
+The most common libraries you will use:
+
+(1)	stdlib¬ – contains a lot of useful data types definitions and methods
+for basic programming like ascii to int (and vice versa) conversion, random
+numbers, etc
+
+(2)	stdio -  the standard input/output library. Printing, reading from
+the keyboard, File I/O, buffer and stream handling.  
+
+You will need these for almost every C program but the most trivial.
+
+****The Main Method********
+int main() is the required  main method header. It can return any int.
+Since the main method is called by the operating system, the returned
+integer is used as a signal to the OS as to whether the program exited
+correctly or not.  Typically 0 means  “no issues” and 1-N is used to
+describe error states.
+
+*****Language Mechanics****
+C is works in much the same way as the object oriented languages you have
+used except that there are no objects and you must be aware of pointers,
+something that students only familiar with Java or other OOP laanguages
+may not have dealt with previously.
+
+We will discuss most of this later in the semester
+
+******Printing************
+
+printf(“String with format specifiers”, items to be substituted )
+
+printf stands for "Print Format".  printf  works similar to the java
+function of the same name.
+
+It formats and prints data.  Can allow you to easily build formatted
+output like a table
+
+Data format is specified with a % (format specifier)
+	%d   Decimal (whole number int or char)
+	%f    float 
+	%lf  long float (double)
+	%s  String (char array)
+	%o Octal number 
+	%x lower case hexadecimal number
+	%X upper case Hexadecimal number
+	%e Scientific Notation (lower case) floats
+	%E Scientific Notation (Upper Case) floats
+	%g Use the shortest representation: %e or %f
+	%G Use the shortest representation: %E or %F	
+	
+Example:
+	int x = 50;
+	printf("There are %d items", x);
+	//This prints "There are 50 items"
+
+Width Specifiers: %#d
+will specify an int that has at least # spaces available to use
+
+Example:
+	int x = 50; int y = 40;
+        printf("There are %5d hammers", x);
+	printf("There are %5d wrenches", y);
+
+This prints
+	"There are    50 hammers
+	 There are    40 wrenches"
+
+
+%0#d will specify the same thing except now those # spaces are 0s
+
+Example:
+        int x = 50; int y = 40;
+	printf("There are %05d hammers", x);
+	printf("There are %5d wrenches", y);
+
+This prints:
+
+There are 00050 hammers
+There are    40 wrenches
+
+
+You can use it to set the width of numbers or to format output like a table.
+
+Note: float and long float values will print with a number of decimal
+places. On Elvis, floats show 6 decimal places by default, doubles show 12.
+
+Example:
+
+  int x = 50; float y = 40;
+  
+  printf("There are %05d hammers\n", x);
+  printf("There are %5f wrenches\n", y);
+
+this prints:
+
+There are 00050 hammers
+There are 40.000000 wrenches
+
+You will need to provide precision specifiers to truncate these
+decimal places. NOTE: The specifiers will round the numbers up or down.
+ 
+Precision Specifiers:  %.#f speicifies how many decimal places to use
+
+Example:
+  int x = 50; float y = 40.666666;
+
+  printf("There are %05d hammers\n", x);
+  printf("There are %.3f wrenches\n", y);
+
+This prints:
+
+There are 00050 hammers
+There are 40.667 wrenches
+
+Precision & Width Specifiers combined: %*.#f
+will specify a float with of * width and # numbers after the decimal
+
+Example:
+
+  int x = 50; float y = 40.666666;
+
+  printf("There are %05d hammers\n", x);
+  printf("There are %5.2f wrenches\n", y);
+
+This will print:
+
+There are 00050 hammers
+There are 40.67 wrenches
+Note that the decimal places count as part of the whole 5 space-width.
+
+****Reading Data********
+scanf(Format specifiers, &Address(es) to store read items)
+
+works like printf  but in reverse.  Takes a format specifier telling the
+program what to expect as first arg, and a place to store the scanned
+item (an & indicates an address in memory) as the second arg
+
+One of the issues with scanf is that, by default, it performs no
+bounds checking.   In other words it doesn’t know where the data ends.
+This can be a problem  when you read in String data.  Think about why this
+might be the case.
+
+Because Strings are just null-terminated character arrays. In other words,
+eventually when reading a string, you will encounter a null char and
+processing it will lead to an error if you aren’t careful
+
+The other main issue is that, if there is some problem with the (read-in)
+string  we have no way to examine it to determine what caused the issue.
+Its not getting stored anywhere.  Even using a debugger and breakpoints,
+we’d have no luck examining the program.
+
+Example: see stats_broken.c 
+****fgets(char * str, int size,  FILE *stream)****
+
+Fgets() is a better and safer method to use.
+
+It reads data from a given streamed source (*stream) of specified size
+and stores it in a given string variable (str).   It will always read,
+at most, size-1 characters.  This is because it will append a character
+to the input.
+
+It stops at a newline or EOF marker.  It also retains the ‘\n’ char, if it
+exists.  And appends a ‘\0’ to the end of the string.
+
+sscanf (char *string, char *format, …) does the same thing  as scanf  except it scans Strings (character arrays) that exist in memory.
+
+Example: see stats_discard.c and stats_safest.c
+
+
+
+**** compiling C programs****
+Is easy. The most basic method is to use the C Compiler.  Invoke this with the
+cc command in Unix.
+
+cc fileName.c
+
+By default the output compiled program is named a.out
+
+If you want to (and you likely will) want to specify a named program, use
+the -o flag
+
+cc -o desiredName fileName.c
+
+**** Execution********
+Run the compiled C programs the same way you would any other Unix program.
+
+In the source folder:
+./programName
+
+. is short hand for the "current directory"
+
+Otherwise specify the full path to the program.

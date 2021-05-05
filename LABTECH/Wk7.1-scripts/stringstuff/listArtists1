@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#sample script from Learning the Bash Shell, 3rd. Ed
+#Demonstrates a basic use of the postional Parameter
+
+#sorting by first column in reverse numerical order
+#piped into head
+ sort $1 -k1rn,1 | head

@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+int main(int argc, char * argv[]){
+
+  
+  printf("The number of args is %s", argc);
+
+  return 0;
+}
+
+  

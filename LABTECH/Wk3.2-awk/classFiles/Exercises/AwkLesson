@@ -1,0 +1,745 @@
+    1  man
+    2  1
+    3  -> man
+    4  man man
+    5  touch
+    6  touch touch
+    7  touch -- help
+    8  touch --help
+    9  echo "hello world"
+   10  echo "johnson"
+   11  man echoq
+   12  ls
+   13  man 
+   14  ls
+   15  pwd
+   16  cd labtechls
+   17  cd LABTECHls
+   18  cd HOMEWORKls
+   19  cd ..
+   20  pwd
+   21  cd /home/edward74
+   22  pwd
+   23  mkdir LABTECH
+   24  cd LABTECH/
+   25  cp -r /home/levyj63/LABTECH/Wk1.1-GettingStarted/ .
+   26  ls
+   27  cd Wk1.1-GettingStarted/
+   28  ls
+   29  more README.txt
+   30  help
+   31  ls
+   32  pwd
+   33  cd /home/edward74/LABTECH/
+   34  ls
+   35  cd /home/edward74/LABTECH/Wk1.1-GettingStarted/
+   36  ls
+   37  cd /home/edward74/LABTECH/Wk1.1-GettingStarted/Welcome
+   38  ls
+   39  help
+   40  man man
+   41  ls
+   42  read /home/edward74/LABTECH/Wk1.1-GettingStarted/Welcome
+   43  read /home/edward74/LABTECH/Wk1.1-GettingStarted/README.txt
+   44  echo "johnny"
+   45  echo "$(pwd)"
+   46  cd /home/edward74/LABTECH/
+   47  ls
+   48  export LC_ALL=C
+   49  /opt/kilroy/bin/learn
+   50  exit
+   51  man man
+   52  exit
+   53  /opt/kilroy/bin/learn morefiles 1.2a
+   54  /opt/kilroy/bin/learn
+   55  exit
+   56  ls
+   57  cd /LABTECH
+   58  cd LABTECH/
+   59  cp -r /home/levyj63/LABTECH/Wk1.2-EditorsAndBasics/ .
+   60  cp -r /home/levyj63/LABTECH/Wk1.2-EditorsAndBasics/ .ls
+   61  ls
+   62  cd Wk1.2-EditorsAndBasics/
+   63  ls
+   64  cat README.txt
+   65  vi sample.txt
+   66  ls
+   67  ls
+   68  cd LABTECH/
+   69  ls
+   70  cd Wk1.2-EditorsAndBasics/
+   71  ls
+   72  cat README.txtcat README.txt
+   73  emacs sample.txt
+   74  mkdir
+   75  mkdir LABTECH
+   76  cd LABTECH/
+   77  mkdir SampleProgram
+   78  cd SampleProgram
+   79  ls
+   80  emacs SampleProgram
+   81  emacs hello.c
+   82  astyle -cpfHs4 -xC75 --style=otbs hello.c
+   83  emacs hello.c
+   84  cc -o hello hello.c
+   85  ./hello 
+   86  ls -l
+   87  exit
+   88  /opt/kilroy/bin/learn morefiles 7.1a
+   89  /opt/kilroy/bin/learn morefiles 8.1a
+   90  /opt/kilroy/bin/learn morefiles 8.1
+   91  /opt/kilroy/bin/learn morefiles 
+   92  /opt/kilroy/bin/learn morefiles 8.1
+   93  /opt/kilroy/bin/learn morefiles 8.1e
+   94  /opt/kilroy/bin/learn morefiles 8.2a
+   95  /opt/kilroy/bin/learncheck files
+   96  /opt/kilroy/bin/learncheck morefiles
+   97  /opt/kilroy/bin/learn morefiles
+   98  /opt/kilroy/bin/learn files 8.1a
+   99  /opt/kilroy/bin/learn files 7
+  100  /opt/kilroy/bin/learn files 7.1a
+  101  /opt/kilroy/bin/learncheck files
+  102  /opt/kilroy/bin/learn files 1.1a
+  103  /opt/kilroy/bin/learncheck files
+  104  clr
+  105  help
+  106  ls
+  107  cd LABTECH/
+  108  ls
+  109  cd Wk1.2-EditorsAndBasics/
+  110  ls
+  111  cd SampleProgram/
+  112  ls
+  113  emacs SampleProgram
+  114  cd LABTECH/
+  115  cd home
+  116  ls
+  117  cd/
+  118  cd /
+  119  ls
+  120  cd /home
+  121  ls
+  122  cd /home/edward74
+  123  ls
+  124  cd LABTECH/
+  125  ls
+  126  cd Wk1.2-EditorsAndBasics/
+  127  ls
+  128  cd LABTECH?
+  129  cd LABTECH/
+  130  ls
+  131  cd SampleProgram
+  132  ls
+  133  cp -r SampleProgram /home/levyj63/LABTECH/Homework/edward74
+  134  mv -v edward74/
+  135  mv --help
+  136  cd /home/edward74
+  137  ls
+  138  cd LABTECH/Wk1.2-EditorsAndBasics/LABTECH
+  139  ls
+  140  cp -r SampleProgram /home/levyj63/LABTECH/Homework/edward74/
+  141  cd /home/levyj63/LABTECH/Homework/edward74/
+  142  ls
+  143  cd SampleProgram/
+  144  ls
+  145  cat hello
+  146  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+  147  ls
+  148  cc - hello hello.c
+  149  cc -o hello hello.c
+  150  cc -o hello hello.c.orig
+  151  emacs hello.c
+  152  ls
+  153  cc -o hello hello.c
+  154  cd /home/edward74
+  155  ls
+  156  cd LABTECH/
+  157  ls
+  158  cd Wk1.2-EditorsAndBasics/
+  159  ls
+  160  cd LABTECH
+  161  ls
+  162  cc -o hello hello.c
+  163  cd SampleProgram
+  164  ls
+  165  cc -o hello hello.c
+  166  emacs hello.c
+  167  cd /home/edward74
+  168  cd /home
+  169  cd /
+  170  cd /home/levyj63/LABTECH/Grades/fix_perms
+  171   /home/levyj63/LABTECH/Grades/fix_perms
+  172  cd /home
+  173  cd /levyj63/LABTECH/Grades
+  174  help
+  175  exec  /home/levyj63/LABTECH/Grades/fix_perms
+  176  cd LABTECH/Wk1.2-EditorsAndBasics/LABTECH/SampleProgram/
+  177  ls
+  178  emacs hello.c
+  179  passwd
+  180  logout
+  181  date
+  182  date -u
+  183  ..
+  184  ls
+  185  cd /LABTECH/
+  186  ls
+  187  cd LABTECH/
+  188  ..
+  189  cd ..
+  190  ls
+  191  pwd
+  192  ~
+  193  ~eyitukt
+  194  .
+  195  ..
+  196  cd ..
+  197  ls
+  198  ~
+  199  cd ~
+  200  ls
+  201  printenv PATH
+  202  echo Lutes, lobsters, and limousines > foo1
+  203  ls
+  204  cat foo1
+  205  echo Make Jack a dull boy. > foo2
+  206  ls
+  207  cat foo1 foo2 > combinedfoo
+  208  ls
+  209  cat combinedfoo 
+  210  /home/levyj63/LABTECH/Homework/Grades/fix_perms
+  211  /home/levyj63/LABTECH/Homework/Grades/GradeSample edward74
+  212  ls
+  213  cd LABTECH/Wk1.2-EditorsAndBasics/
+  214  ls
+  215  cd LABTECH/
+  216  ls
+  217  cd SampleProgram/
+  218  ls
+  219  emacs hello.c
+  220  exit
+  221  ls
+  222  cd LABTECH/Wk1.2-EditorsAndBasics/LABTECH/
+  223  ls
+  224  cd LABTECH/
+  225  pwd
+  226  cd /home/edward74/LABTECH/
+  227  ls
+  228  cp -r /home/levyj63/LABTECH/Wk2.1-Files+Wildcards/ .
+  229  ls
+  230  cd Wk2.1-Files+Wildcards/
+  231  ls
+  232  cd wildcards/
+  233  ls
+  234  ls -la
+  235  ls -a
+  236  ls -l
+  237  man -f
+  238  more rad
+  239  more hello.txt
+  240  man more
+  241  chmod 777 rad
+  242  ls -l rad
+  243  chmod 640 rad
+  244  ls -l rad
+  245  chmod u+x+w rad
+  246  ls -l rad
+  247  chmod o+x rad
+  248  ls -l rad
+  249  chmod a+r rad
+  250  ls -l rad
+  251  ls r?d
+  252  ls r*
+  253  ls H*
+  254  ls h*
+  255  cd ~
+  256  ls -a
+  257  emacs .bashrc
+  258  source .bashrc
+  259  cd -
+  260  touch BASE
+  261  touch ALLSTUFF
+  262  ls [A-Z]*
+  263  exit
+  264  learn
+  265  /opt/kilroy/bin/learn
+  266  owd
+  267  pwd
+  268  ls -l
+  269  cd LABTECH/Wk2.1-Files+Wildcards/
+  270  ls
+  271  cd wildcards/
+  272  ls
+  273  ..
+  274  cd ..
+  275  .
+  276  ls
+  277  cd ..
+  278  cd ~
+  279  ls
+  280  rm combinedfoo
+  281  ls
+  282  rm foo1
+  283  rm foo2
+  284  ls
+  285  mkdir Personal
+  286  ls
+  287  cd Personal/
+  288  mkdir Practice 
+  289  ls
+  290  cd ..
+  291  ls
+  292  cd Personal/
+  293  ls
+  294  cd Practice/
+  295  mkdir C Programming
+  296  ls
+  297  mv C Programming CProgramming
+  298  cd C
+  299  cd ..
+  300  rm C Programming
+  301  rmdir C Programming
+  302  ls
+  303  mkdir C_Programming
+  304  ls
+  305  cd C_Programming/
+  306  mkdir Second_C_Program
+  307  ls
+  308  cd Second_C_Program/
+  309  ls
+  310  emacs addNumbers
+  311  exit
+  312  cd LABTECH/
+  313  ls
+  314  cp -r /home/levyj63/LABTECH/Wk2.2-PipesAndGrep/ .
+  315  ls
+  316  cd Wk2.2-PipesAndGrep/
+  317  ls
+  318  cd IO/
+  319  ls
+  320  cat fileA fileB > fileC
+  321  ls
+  322  ll
+  323  cat fileC
+  324  echo "Append" >> fileC
+  325  cat fileC
+  326  ls
+  327  echo "Append" > fileC
+  328  cat fileC
+  329  set -o
+  330  set -o noclobber
+  331  echo "Append" > fileC
+  332  wc fileC
+  333  cat fileC
+  334  wc < fileC
+  335  man grep
+  336  cat fileC | grep 'A..'
+  337  who
+  338  man who
+  339  cd ../grep
+  340  ls
+  341  cat web2
+  342  grep 'z'
+  343  cd LABTECH/Wk2.2-PipesAndGrep/
+  344  ls
+  345  cd grep
+  346  cat web2 | fgrep -n 'rhinoceros'
+  347  grep '.a.ry'
+  348  cd LABTECH/Wk2.2-PipesAndGrep/grep/
+  349  lls
+  350  ls
+  351  ls
+  352  cat web2 | grep -wn '[aeiou]*'
+  353  cat web2 | grep - n ^[aeiou]*$'
+  354  ls
+  355  cd
+  356  exit
+  357  cd LABTECH/Wk2.2-PipesAndGrep/grep/
+  358  ls
+  359  cat web2 | egrep -n '(cat|bat)'
+  360  cat web2 | egrep -n 
+  361  cat web2 | egrep -n '(cat|bat)'
+  362  cat web2 | egrep -n 'e.*e.*e.*'
+  363  cat web2 | egrep -n 'daddy'
+  364  cat web2 | egrep -o 'daddy'
+  365  cat web2 | egrep -no 'daddy'
+  366  exit
+  367  ls
+  368  cd LABTECH/Wk2.2-PipesAndGrep/
+  369  ls
+  370  cd grep/
+  371  ls
+  372  more web2
+  373  cd LABTECH/
+  374  ls
+  375  cp /home/levyj63/LABTECH/Wk3.1-sed/ .
+  376  cp -r /home/levyj63/LABTECH/Wk3.1-sed/ .
+  377  ls
+  378  cd Wk3.1-sed/
+  379  ls
+  380  tree
+  381  cd karaoke/
+  382  ls
+  383  cat Dayman.txt
+  384  man grep
+  385  sed 's/Dayman/Troll/' Dayman.txt
+  386  sed 's/Dayman/Troll/g' Dayman.txt
+  387  sed '14s/Dayman/Troll/g' Dayman.txt
+  388  sed '$s/Dayman/Troll/g' Dayman.txt
+  389  sed -n '7p' Dayman.txt
+  390  sed =n '1,7s/Dayman/Troll/p' Dayman.txt
+  391  sed -n '1,7s/Dayman/Troll/p' Dayman.txt
+  392  sed -e '1,7s/Dayman/Troll/p' -e '9,14s/Dayman/Grayman/'  Dayman.txt
+  393  sed -e 's/Dayman/Troll/g' -e '10,14s/Dayman/Grayman/'  Dayman.txt
+  394  sed -e 's/Dayman/Troll/g' -e '10,14s/Troll/Grayman/'  Dayman.txt
+  395  sed -e 's/D.*n/Troll/g' -e '10,14s/Troll/Grayman/'  Dayman.txt
+  396  sed -e 's/D.*!n/Troll/g' -e '10,14s/Troll/Grayman/'  Dayman.txt
+  397  sed -e 's/D.*!/Troll/g' -e '10,14s/Troll/Grayman/'  Dayman.txt
+  398  sed -e 's/F.* /Beluga/g'
+  399  cd LABTECH/Wk3.1-sed/
+  400  ls
+  401  cd Examples
+  402  ls
+  403  cat Addresses.csv
+  404  sed 's/,\s/g' Addresses.csv
+  405  sed 's/,/\s/g' Addresses.csv
+  406  sed 's/,/\t/g' Addresses.csv
+  407  cd ../karaoke/
+  408  ls
+  409  sed -n '/ah-/p' Dayman.txt
+  410  sed  '/ah-/d' Dayman.txt
+  411  sed  '/ah-/d' Dayman.txt > deleted.txt
+  412  cat deleted.txt 
+  413  sed  '/ah/s/ah-/blah/g' Dayman.txt 
+  414  who | sed '/edward74/p'
+  415  who | sed -n '/edward74/p'
+  416  who | sed -n '/edward74/s/griegwowoghowghowhg/p'
+  417  who | sed -n 's/edward74/griegwowoghowghowhg/p'
+  418  who | sed -e 's/(10.*)/James Hall/' -e 's/(150.250.*)/Robinson Hall'
+  419  who | sed -e 's/(10.*)/James Hall/' -e 's/(150.250.*)/Robinson Hall/'
+  420  cat Dayman.txt 
+  421  clear
+  422  sed 'y/Dayman/DAYMAN/' Dayman.txt
+  423  tr 'Dayman' 'DAYMA' Dayman.txt
+  424  cat Dayman.txt | tr Dayman DAYMA
+  425  cat Dayman.txt | tr -s A-Z a-z
+  426  exit
+  427  cd LABTECH/Wk2.2-PipesAndGrep/
+  428  ls
+  429  cd grep/
+  430  ls
+  431  man grep
+  432  grep 'whoami' web2.txt
+  433  grep 'whoami' web2
+  434  exit
+  435  cd LABTECH/Wk2.2-PipesAndGrep/
+  436  ls
+  437  cd IO
+  438  ls
+  439  cd ..
+  440  ls
+  441  cd grep
+  442  ls
+  443  whoami
+  444  echo Ryan Edwards
+  445  grep 'R*E' web2
+  446  grep 'R.*E' web2
+  447  grep -ni 'R.*e' web2
+  448  grep -ni 'R*e' web2
+  449  grep -ni ' R.*e ' web2
+  450  grep -ni ' R.*s' web2
+  451  grep -ni 'R.*s' web2
+  452  grep -ni 'r\b\e' web2
+  453  grep -ni 'e\b\r' web2
+  454  grep -ni '\br' web2
+  455  grep -ni '\br\e\b' web2
+  456  grep -ni '\<r.*s\>' web2
+  457  grep -nic '\<r.*s\>' web2
+  458  grep -nc '\<r.*s\>' web2
+  459  grep -nwc '\<r.*s\>' web2
+  460  grep -cnw '\<r.*s\>' web2
+  461  grep -nicm '\<r.*s\>' web2
+  462  grep -nmi '\<r.*s\>' web2
+  463  grep -nim 1 '\<r.*s\>' web2
+  464  grep -nic '\<r.*s\>' web2
+  465  grep -nc '\<r.*s\>' web2
+  466  grep -nwc '\<r.*s\>' web2
+  467  grep -w '\<r.*s\>' web2
+  468  grep -nic '\<r.*s\>' web2 | tail -1
+  469  grep -ni '\<r.*s\>' web2 | tail -1
+  470  grep -ni '\<r.*s\>' web2 | tail -2
+  471  grep -nim 1 'R.*' web2
+  472  grep -nim 1 '\<r.*\>' web2
+  473  grep -nim 1 '\<Ryan\>' web2
+  474  grep -nim 1 '\<[Ryan]\>' web2
+  475  grep -vi '[ryan]' web2
+  476  grep -vi '[^ryan]' web2
+  477  grep -vim 1 '[^ryan]' web2
+  478  grep -vimc 1 '[^ryan]' web2
+  479  grep -vicm 1 '[^ryan]' web2
+  480  grep -nvicm 1 '[^ryan]' web2
+  481  grep -nim 1 '[^ryan]' web2
+  482  grep -nivm 1 '[^ryan]' web2
+  483  grep -nim 1 '[^ryan]' web2
+  484  grep -nim 1 '^[ryan]' web2
+  485  grep -vnim 1 '[^ryan]' web2
+  486  grep -nvim 1 '[^ryan]' web2
+  487  grep -nvcim 1 '[^ryan]' web2
+  488  grep -nvci '[^ryan]' web2
+  489  grep -nvim 1 '[^edwards]' web2 | tail -1
+  490  grep -nvi '[^edwards]' web2 | tail -1
+  491  grep -nvic '[^edwards]' web2 | tail -1
+  492  grep -nvic '[^Albus]' web2 | tail -1
+  493  grep -nic '[^Albus]' web2 | tail -1
+  494  grep -nic '[^Albus]' web2 
+  495  grep -vnic '[^Albus]' web2 
+  496  grep -vni '[^Albus]' web2 
+  497  grep -v '[^Albus]' web2 
+  498  grep -vni '[^Albus]' web2 | tail -1 
+  499  grep -vni '[^Dumbledore]' web2 | tail -1 
+  500  grep -vni '[^E??????]' web2 | head -2
+  501  grep -vni '[^E.*.*.*.*.*.*]' web2 | head -2
+  502  grep -vni '[^E*]{7}' web2 | head -2
+  503  grep -vni '[^E.*]{7}' web2 | head -2
+  504  grep -ni '[^E.*]{7}' web2 | head -2
+  505  grep -vni '[^E.*]{7}' web2 | head -2
+  506  grep -vni '[^E.*]\{7}' web2 | head -2
+  507  grep -vni '[^E.*]\{7\}' web2 | head -2
+  508  grep -x '[^E.*]\{7\}' web2 | head -2
+  509  grep -n 'E.*{7\}' web2
+  510  grep -n 'E*{7\}' web2
+  511  grep -n 'E*{7,7\}' web2
+  512  grep -n '{7,7\}' web2
+  513  grep -ni '{7,7\}' web2
+  514  grep -ni '{7,7}' web2
+  515  grep -ni '{7}' web2
+  516  grep -vwE '\w{7,7}' web2
+  517  grep -ni '^E......$' web2
+  518  grep -ni '^E......$' web2 | head -2
+  519  grep -ni '^r......$' web2 | tail -2
+  520  grep -ni '[^ea.*]' web2 | tail -2
+  521  grep -ni '[^ea*]' web2 | tail -2
+  522  grep -ni '[^ea*]' web2 
+  523  grep -niv '[^ea*]' web2 
+  524  grep -niv '[^ae]' web2 
+  525  grep -niv '[^ae.*]' web2 
+  526  grep -nivc '[^e]' web2 
+  527  grep -nic '^[ae]+$' web2 
+  528  grep -ni '^[ae]+$' web2 
+  529  grep -ni '^[ae]$' web2 
+  530  grep -nie '^[ae]$' web2 
+  531  grep -ni 'ae' web2 
+  532  grep -ni '[ae]' web2 
+  533  grep -nic '[ae]' web2 
+  534  grep -nic '[au]' web2 
+  535  grep -nic '[ue]' web2 
+  536  grep -nc '[ue]' web2 
+  537  grep -nc '^[ue]' web2 
+  538  grep -nc '[^ue]' web2 
+  539  grep -ncv '[^ue]' web2 
+  540  grep -ncv '[^au]' web2 
+  541  grep -nic 'au' web2
+  542  grep -nic 'AU' web2
+  543  grep -nc 'AU' web2
+  544  grep -nc 'eio' web2
+  545  grep -nic 'eio' web2
+  546  grep -ni '^[au]' web2
+  547  grep -nic '^[au]' web2
+  548  grep -nic '[^au]' web2
+  549  grep -nic '[^a]*a[^u]*u' web2
+  550  grep -nic '[^a]*a[^u]*u[^u]' web2
+  551  grep -nic '[^a]*a[^u]*u' web2
+  552  grep -nic '(au)' web2
+  553  grep -nic '..au' web2
+  554  grep -nic '\ba\u' web2
+  555  grep -nic '\ba\a\' web2
+  556  grep -nic '\ba\a\b' web2
+  557  grep -nwc '\<r.*s\>' web2 | head -1
+  558  grep -ni '\<r.*s\>' web2 | head -1
+  559  grep -ni '\<R.*s\>' web2 | head -1
+  560  grep -nvci '[^ryan]' web2
+  561  grep -nvi '[^ryan]' web2
+  562  grep -nvci '[^ryan]' web2
+  563  grep -nvi '[^Dumbledore]' web2 | tail -1
+  564  grep -nvic '[^Dumbledore]' web2
+  565  grep -nvic '[^dumbledore]' web2
+  566  grep -nvi '[^E......$]' web2 head -2
+  567  grep -nvi '[^E......$]' web2 |  head -2
+  568  grep -ni '^E......$' web2 | head -2
+  569  grep -ni '^D.........$' web2 | head -2
+  570  grep -ni '^......r$' web2 | tail -2
+  571  grep -ni '^....t$' web2 | tail -2
+  572  grep -ni '^...r$' web2 | tail -2
+  573  grep -ncv '[^au]' web2 
+  574  grep -ncv '[^a*u*]' web2 
+  575  grep -ncv '[a*u*]' web2 
+  576  grep -ncv '^[a*u*]' web2 
+  577  grep -nc '^[a*u*]' web2 
+  578  grep -nc '^[a*u*]$' web2 
+  579  grep -nc '^[a.*u.*]' web2 
+  580  grep -ncv '[^a.*u.*]' web2 
+  581  grep -nciv '[au]' web2
+  582  grep -nciv '[.*a.*u]' web2
+  583  grep -nciv '[^.*a.*u]' web2
+  584  grep -nciv '[^.*a.*u]\' web2
+  585  grep -nciv '[^.*a.*u]\[^.*u.*a]' web2
+  586  grep -nciv '[*]' web2
+  587  grep -nciv '[a*u]' web2
+  588  grep -nciv '[*a*u*]' web2
+  589  grep -nciv '[^*a*u*]' web2
+  590  grep -nci '[*a*u*]' web2
+  591  grep -nci '[*a*u*]\[*u*a*]' web2
+  592  exit
+  593  cd LABTECH/
+  594  ls
+  595  cd Wk2.2-PipesAndGrep/
+  596  ls
+  597  cd grep
+  598  ls
+  599  whoami
+  600  clear
+  601  whoami
+  602  echo Ryan Edwards
+  603  grep -ni '<\r.*s\>' web2 | head -1
+  604  grep -ni '\<r.*s\>' web2 | head -1
+  605  grep -nic '\<r.*s\>' web2 | head -1
+  606  grep -nicw '\<r.*s\>' web2 
+  607  grep -nic '\<r.*s\>' web2 | tail -2
+  608  grep -ni '\<r.*s\>' web2 | tail -2
+  609  clear
+  610  whoami
+  611  echo Ryan Edwards
+  612  grep -ni '\<R.*s\>' web 2 | head -1
+  613  clear
+  614  whoami
+  615  echo Ryan Edwards
+  616  grep -ni '\<R.*s\>' web2 | head -1
+  617  grep -nic '\<R.*s\>' web2 
+  618  grep -nc '\<R.*s\>' web2 
+  619  grep -nwc '\<R.*s\>' web2 
+  620  grep -w '\<R.*s\>' web2 
+  621  clear
+  622  echo Ryan Edwrds
+  623  clear
+  624  echo Ryan Edwards
+  625  clear
+  626  whoami
+  627  echo Ryan Edwards
+  628  grep -ni '\<R.*s\>' web2 | head -1
+  629  grep -nic '\<R.*s\>' web2 | head -1
+  630  grep -nc '\<R.*s\>' web2 
+  631  grep -wnc '\<R.*s\>' web2 
+  632  grep -ni '\<R.*s\>' web2 | tail -2
+  633  grep -nvi '[^ryan]' web2 | head -1
+  634  grep -nvic '[^ryan]' web2
+  635  grep -nvi '[^edwards]' web2 | tail -1
+  636  grep -nvic '[^edwards]' web2 
+  637  grep -nvi '^E......$' web2 | head -2
+  638  grep -ni '^E......$' web2 | head -2
+  639  grep -ni '^...r$' web2 | tail -2
+  640  exit
+  641  clear
+  642  cd /opt/kilroy/bin/learn morefiles
+  643  cd /opt/kilroy/bin/learn 
+  644   /opt/kilroy/bin/learn 
+  645  clear
+  646  cd LABTECH/Wk3.1-sed/
+  647  ls
+  648  cd Examples/
+  649  ls
+  650  man sed
+  651  sed s/ 'A' | Addresses.csv
+  652  sed '/s/a/t/Assresses.csv'
+  653  exit
+  654  ls
+  655  cd Personal/
+  656  ls
+  657  cd Practice/
+  658  ls
+  659  cd ..
+  660  ls
+  661  mkdir Notes
+  662  ls
+  663  cd Notes
+  664  cp /home/levyj63/CLT/Notes/RegexNotes.txt .
+  665  cp /home/~levyj63/CLT/Notes/RegexNotes.txt .
+  666  ls
+  667  cd ..
+  668  pwd
+  669  cd /home/edward74
+  670  ls
+  671  cd LABTECH/
+  672  ls
+  673  cd Wk3.1-sed/
+  674  ls
+  675  cd Examples/
+  676  ls
+  677  cat Addresses.csv
+  678  man sed
+  679  cat phones.txt
+  680  exit
+  681  ls
+  682  cd LABTECH/
+  683  ls
+  684  cd Wk2.2-PipesAndGrep/
+  685  ls
+  686  cd grep/
+  687  ls
+  688  grep nim 1 '^[ryan]$' web2
+  689  grep nim 1 '^[ryan]*$' web2
+  690  grep -nim 1 '^[ryan]*$' web2
+  691  grep -nim 1 '^[edwards]*$' web2
+  692  grep -ic '^[^ea]*$' web2
+  693  cd ..
+  694  cp -r /home/levyj63/LABTECH/Wk3.2-awk/ .
+  695  cd Wk3.2-awk/
+  696  ls
+  697  cd Awk/
+  698  ls
+  699  cd ../classFiles/
+  700  ls
+  701  cd Exercises/
+  702  ls
+  703  cat Addresses
+  704  mv Addresses Addresses.csv
+  705  ls
+  706  cp Addresses.csv Addresses
+  707  cat Addresses | tr , \s
+  708  awk 'NR==1{print $0}' Addresses
+  709  cat Addresses | tr , \s > Addresses
+  710  awk 'NR==1{print $0}' Addresses
+  711  cat Addresses.csv | r , \s > Addresses
+  712  cat Addresses.csv | tr , \s > Addresses
+  713  awk 'NR==1{print $0}' Addresses
+  714  awk 'NR==1{print $1}' Addresses
+  715  awk -F"," 'NR==1{print $1}' Addresses
+  716  awk -F"," 'NR==1{print $1}' Addresses.csv
+  717  awk -F"," '{print $1}' Addresses.csv
+  718  awk -F"," '{print $1"\t"$2}' Addresses.csv
+  719  awk -F"," '{print $1"\s"$2}' Addresses.csv
+  720  awk -F"," '{print $1","$2}' Addresses.csv
+  721  awk -F"," '{print $2","$1}' Addresses.csv
+  722  awk -F"," '{print $2"\s"$1}' Addresses.csv
+  723  awk -F"," '{print $2" "$1}' Addresses.csv
+  724  awk -F"," 'NR==1{print $0}; NR>1{print $2" "$1}' Addresses.csv
+  725  awk -F"," 'NR==1{print "Employee Info"}; NR>1{print $2" "$1}' Addresses.csv
+  726  awk -F"," 'NR==1{print "Employee Info"}; NR>1{print $0}' Addresses.csv
+  727  awk -F"," 'NR==1{print "Employee Info"}; NR>1{print $2 $1"\n"$6}' Addresses.csv
+  728  awk -F"," 'NR==1{print "Poorly Formatted"}; NF!=6{print NR": " $0}' Addresses.csv
+  729  awk -F"," 'NR==1{print "Poorly Formatted"}; NF!=6{print NR": " $NF}' Addresses.csv
+  730  awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 "'" $1}' Addresses.csv
+awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 "," $1}' Addresses.csv
+awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 "'" $1}' Addresses.csv
+  731  awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 $1"\n"}' Addresses.csv
+  732  awk -F"," 'NF==6{print "Address Labels"}'; 'NR==1{print $2 $1"\n"}' Addresses.csv
+  733  awk -F"," 'NF==6{print "Address Labels"}'; 'NR==1{print $2 $1}' Addresses.csv
+  734  awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 $1}' Addresses.csv
+  735  awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 $1" "}' Addresses.csv
+  736  awk -F"," 'NF==6{print "Address Labels"}; NR==1{print $2 $1}' Addresses.csv
+  737  awk -F"," 'NF==6{print "Address Labels"}; NR!={print $2 $1}' Addresses.csv
+  738  awk -F"," 'NF==6{print "Address Labels"}; NR!=6{print $2 $1}' Addresses.csv
+  739  awk -F"," 'NF==6{print "Address Labels"}; NR!=6{print $2" " $1}' Addresses.csv
+  740  awk -F"," 'NF==6{print "Address Labels"}; NR!=6{print $2" " $1}; NF==3{print $3}' Addresses.csv
+  741  awk -F"," 'NF==6{print $2" " $1"\n"$3"\n"$4", "$5" "$6"\n"}' Addresses.csv
+  742  history > Awk Lesson
+  743  history > AwkLesson

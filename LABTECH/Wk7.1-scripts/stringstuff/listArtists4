@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#sample script from Learning the Bash Shell, 3rd. Ed
+
+howmany=${2:-7}
+#demos that substitutions with standard string values works in the same manner
+filename=${1:-testData.txt}
+
+# This is a more elegant and readable solution.  We can see that assigning the
+# string substitution variables can make the code much easier to read
+
+cat $filename | sort -k1rn,1 | head -$howmany

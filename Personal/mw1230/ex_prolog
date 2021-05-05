@@ -1,0 +1,78 @@
+% PROLOG RECURSION EXAMPLES - APRIL 2020
+
+% delete(+Item, +OldList, -NewList)
+% NewList is the result of deleting the first occurrence of Item from OldList.
+% Succeed with list unchanged if not found.
+% Example: delete(b, [a, b, c], X) will succeed with X = [a, c].
+% delete(a, [b, c], X) will succeed with X = [b, c].
+% delete(a, [a, b, c], X) will succeed with X = [b, c].
+% 3 cases:
+% 1) Empty list: [ ]
+% 2) Match at head:  result is tail.
+% 3) No match at head: glue the head onto result of deleting from tail
+
+delete(_, [ ], [ ]).
+delete(Item, [ Item | T ], T).
+delete(Item, [ H | T ],  [ H | NewT ]) :- Item \== H, delete(Item, T, NewT).
+
+% pos_list(+L, -Positives)
+% Positives is a list of the positive numbers in list L.
+% Examples:
+% pos_list([ ], X) succeeds with X = [ ].
+% pos_list([ 2, -4, 5, -9 -8, 7 ], X) succeeds with X = [2, 5, 7].
+% pos_list([ -2, -4, 5, -9 -8, 7 ], X) succeeds with X = [5, 7].
+% 3 cases:
+% 1) empty list: [ ]
+% 2) head is positive: glue head onto list of positives from tail
+% 3) head not positive: list of positives from tail
+
+pos_list([ ], [ ]).
+pos_list([ H | T ], [ H | TPos ]) :- H > 0, pos_list(T, TPos).
+pos_list([ H | T ], TPos) :- H =< 0, pos_list(T, TPos).
+
+
+% all_pos(+L)
+% All of the numbers in list L are positive.
+
+% has_pos(+L)
+% At least one of the numbers in list L is positive.
+
+% sum_list(+L, -Sum)
+% Sum is the sum of the numbers in list L
+% Example: sum_list([2, 4, 6], X) succeeds with X = 12.
+% 2 cases:
+% Empty: 0
+% Nonempty: Add head to the sum of the tail.
+
+sum_list([ ], 0).
+sum_list([ H | T ], Sum) :- sum_list(T, TSum), Sum is H + TSum.
+
+% occurs(+Item, +L, -Count)
+% Count is the number of occurrences of Item in list L.
+% Example: occurs(a, [ a, b, a, c, a, a], X) succeeds with X = 4
+% 3 cases:
+% Empty: 0
+% Match at head: Add 1 to # occurrences in tail
+% No match at head: # occurrences in tail
+
+occurs(_, [ ], 0).
+occurs(Item, [Item | T], Count ) :-
+	occurs(Item, T, TCount),
+	Count is 1 + TCount.
+occurs(Item, [H | T], Count) :-
+	Item \== H,
+	occurs(Item, T, Count).
+
+% state_capital(+State, +InfoList, -Capital) 
+% Capital is the capital of State in InfoList. 
+% InfoList is a list of [State, Capital] pairs. 
+% Fail if State is not in InfoList.
+% Example: state_capital(nj, [[nj, trenton], [de, dover], [md, annapolis]], X) 
+% should succeed with X = trenton.
+% Fail if not found.
+% 2 cases:
+% Match at head: first capital
+% No match at head: look in tail
+
+state_capital(State, [ [State, Capital ] | _ ], Capital).
+state_capital(State, [ _ | T ], Capital) :- state_capital(State, T, Capital).

@@ -1,0 +1,5 @@
+(define (num_pos L)
+
+	(cond ((null? L) 0)
+	      ((> (car L) 0) (+ 1 (num_pos (cdr L))))
+	      (else    	     (num_pos (cdr L))) ))

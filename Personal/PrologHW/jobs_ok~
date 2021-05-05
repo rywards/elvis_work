@@ -1,0 +1,39 @@
+% PrologHW Ryan Edwards
+% check if job assignments are good
+% jobs_ok(+Assignment, +Employees).
+
+jobs_ok(Assignment,Employees) :- lists:flatten(Assignment,X),nodupes(X),checkShifts(Assignment,Employees).
+
+has_dupes([H|T]) :- member(H,T),!; has_dupes(T).
+
+nodupes(X) :- not(has_dupes(X)).
+
+checkShifts([H|T], Employees) :- goodShift(H, Employees), checkShifts(T, Employees).
+
+checkShifts([],_).
+
+goodShift(ShiftList, Employees) :-
+              (nth0(0,ShiftList,X1),goodAssignment(Employees, X1, 1)),
+              (nth0(1,ShiftList,X2),goodAssignment(Employees, X2, 1)),
+              (nth0(2,ShiftList,X3),goodAssignment(Employees, X3, 2)),
+              (nth0(3,ShiftList,X4),goodAssignment(Employees, X4, 3)).
+
+goodAssignment([H|T], Person, Job) :-
+                 (nth0(0,H,Person),nth0(Job,H,1),!);
+                 goodAssignment(T,Person,Job).
+		 
+goodAssignment([],,) :- false.
+
+
+
+
+% jobs_ok(Assignment, Employees) :- flatten(Assignment, X), no_dups(X).
+% no_dups(L) :- \+ (select(Element, L, T), select(Element, T, _)).
+% shift_ok([H | T], E) :- members(H, E), shift_ok(T).
+% members(Element, [Element | _]).
+% members(Element, [_ | T]) :- members(Element, T).
+% Original no_dups that only worked on first 4
+% I could have expanded it to all 16 but it
+% would have been an absolute mess.
+% The above way is much cleaner.
+% no_dups([A, B, C, D]) :- A \== B, A \== B, A \== C, A \== D, B \== C, B \== D, C \== D.

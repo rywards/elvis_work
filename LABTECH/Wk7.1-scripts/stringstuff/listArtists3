@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#sample script from Learning the Bash Shell, 3rd. Ed
+
+# Another example of string substitution
+header=$3
+
+echo -e  ${header:+"Albums Artist\n"} | sort ${1:-testData.txt} -k1rn,1 | head -${2:-10}

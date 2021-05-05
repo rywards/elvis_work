@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#sample script from Learning the Bash Shell, 3rd. Ed
+
+# This code demonstraties a way to use string substitutions for error checking
+# ${variable:?message} will fetch and return the value of variable, if it
+# exists.  Otherwise it will print message and abort the current command
+# or script.
+function header(){
+    echo " Albums   Artist"
+}
+
+howmany=${2:-10}
+
+
+filename=${1:?"Error! Usage: ./listArtistsFinal fileName [howManyLines]"}
+if [ $howmany -gt 5 ]
+then
+    header
+    cat $filename | sort -k1rn,1 | head -$howmany
+else
+    cat $filename | sort -k1rn,1 | head -$howmany
+fi

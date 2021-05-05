@@ -1,0 +1,1000 @@
+   82  ls
+   83  ls -l
+   84  cd ..
+   85  ls
+   86  chmod 705 Grades
+   87  ls
+   88  cd Grades/
+   89  ls
+   90  ls -l
+   91  chmod 705 fix_perms 
+   92  ls -l
+   93  chmod 701 fix_perms 
+   94  ls -l
+   95  chmod 701 GradeSample
+   96  ls
+   97  ls -l
+   98  cd ..
+   99  ls
+  100  cd ..
+  101  ls
+  102   cd ..
+  103  ls 
+  104  cd LABTECHF2018/
+  105  ls
+  106  cd myAudit/
+  107  ls
+  108   cd Grades/
+  109  ls -l
+  110  cd /home/kilroy/LABTECH/
+  111  cd ..
+  112  ls
+  113  cd ..
+  114  ls
+  115  cd ..
+  116  ls
+  117  cd LABTECH
+  118  ls
+  119  cd Homework/
+  120  ls
+  121  ls -l
+  122  cd Grades/
+  123  ls
+  124  ls -l
+  125  ls
+  126  chmod 711 test-Sample
+  127  ls -l
+  128  chmod 705 test-Sample
+  129  ls
+  130  ls -l
+  131  chmod 705 test-Stats/
+  132  ls
+  133  ls -l
+  134  cd GradeStats
+  135  cd test-Stats/
+  136  ls
+  137  cd ..
+  138  ls
+  139  cd ..
+  140  ls
+  141  pwd
+  142  WAIT
+  143  wait
+  144  wait2
+  145  man wait
+  146  cd LABTECH
+  147  ls
+  148  cd Wk1.1-Connecting/
+  149  ls
+  150  ./Welcome
+  151  chmod 701 Welcome*
+  152  ls -l
+  153  cd ..
+  154  ls
+  155  cd Wk1.2-FileManagement/
+  156  ls
+  157  cd Levy/
+  158  ls
+  159  cd A
+  160  ls
+  161  emacs README.txt
+  162  pwd
+  163  cd ..
+  164  ls
+  165  cd ..
+  166  ls
+  167  cd ..
+  168  cdls
+  169  ls
+  170  cd Homework/
+  171  ld
+  172  ls
+  173  cd Grades/
+  174  ls
+  175  emacs test-Sample/
+  176  cd test-Sample/
+  177  ls
+  178  emacs hello.out
+  179  ls
+  180  cd ..
+  181  ls
+  182  emacs GradeSample
+  183  cd test-Sample/
+  184  ls
+  185  emacs noinput.
+  186  emacs noinput.txt
+  187  emacs GradeSample
+  188  cd ..
+  189  emacs GradeSample
+  190  ./GradeSample levyj63
+  191  ls
+  192  cd ..
+  193  ls 
+  194  cd levyj63
+  195  ls
+  196  cd SampleProgram/
+  197  ls
+  198  emacs hello.c
+  199  cd ..
+  200  ls
+  201  cd ..
+  202  cd Grades/
+  203  ls
+  204  ./GradeSample
+  205  ./GradeSample levyj63
+  206  cd ..
+  207  ls
+  208  cd Grades/
+  209  ls
+  210  cd test-Sample/
+  211  ls
+  212  emacs hello.out
+  213  cd ..
+  214  ls
+  215  ./GradeSample levyj63
+  216  ls
+  217  cd ..
+  218  ls
+  219  cd levy
+  220  cd levyj63/
+  221  ls
+  222  cd SampleProgram/
+  223  ls
+  224  cc -o hello hello.c
+  225  cd ..
+  226  ls
+  227  cd .
+  228  cd ..
+  229  ls
+  230  cd Grades/
+  231  ;s
+  232  ls
+  233  ./GradeSample levyj63
+  234  ls
+  235  cd ..
+  236  ls
+  237  cd le
+  238  cd levyj63/
+  239  ;s
+  240  ls
+  241  cd SampleProgram/
+  242  ls
+  243  emacs hello.c
+  244  cc -o hello hello.c
+  245  cd ..
+  246  ls
+  247  cd ..
+  248  ls
+  249  cd Grades/
+  250  ls
+  251  ./GradeSample levyj63
+  252  cd ..
+  253  ls 
+  254  cd levy
+  255  cd levyj63/
+  256  ls
+  257  cd SampleProgram/
+  258  ls
+  259  emacs hello.c
+  260  cc -o hello hello.c
+  261  ./GradeSample levyj63
+  262  cd ..
+  263  ls
+  264  cd SampleProgram
+  265  ls
+  266  cd ..
+  267  ls
+  268  cd ..
+  269  ls
+  270  cd Grades/
+  271  ;s
+  272  ls
+  273  ./GradeSample levyj63
+  274  ls
+  275  emacs GradeSample
+  276  ls
+  277  emacs GradeSample~
+  278  emacs GradeSample
+  279  ls 
+  280  cd ..
+  281  ls
+  282  cd levyj63
+  283  ls
+  284  cd Sample
+  285  cd SampleP
+  286  cd SampleProgram/
+  287  emacs hello.c
+  288  ls
+  289  cd LABTECH
+  290  ls
+  291  cd Wk1.2-FileManagement/
+  292  ls
+  293  cd Levy/
+  294  ls
+  295  cd A
+  296  ls
+  297  emacs README.txt
+  298  ls
+  299  cd LABTECH
+  300  pwd
+  301  ls
+  302  cd Wk1.1-Connecting/
+  303  ls
+  304  cd ..
+  305  ls
+  306  ls -l
+  307  chmod 705
+  308  chmod 705 Wk1.1-Connecting/
+  309  cd Wk1.1-Connecting/
+  310  cd ..
+  311  ls
+  312  ls -l
+  313  ls
+  314  chmod 777 Wk1.1-Connecting/
+  315  ls -l
+  316  cd Wk1.1-Connecting/
+  317  ls -l
+  318  chmod 755 Welcome
+  319  ls
+  320  ls -l
+  321  ./Welcome
+  322  cd ..
+  323  cd ~
+  324  ls 
+  325  ls -l
+  326  cd LABTECH
+  327  ls -l
+  328  cd ..
+  329  chmod 744 LABTECH
+  330  ls -l
+  331  chmod 705 LABTECH
+  332  chmod 750 LABTECH
+  333  chmod 755 LABTECH
+  334  ls -l
+  335  cd LABTECH
+  336  cd Wk1.1-Connecting/
+  337  ls
+  338  ls -l
+  339  rm Welcome~
+  340  ls
+  341  cd
+  342  cd Wk1.1
+  343  cd Wk1.1cd LABTECH
+  344  cd LABTECH
+  345  cd Wk1.1-Connecting/
+  346  ls
+  347  ./Welcome
+  348  touch A
+  349  ls 
+  350  rm a
+  351  ls
+  352  man rm
+  353  more Welcome 
+  354  set -p
+  355  echo "Hello World"
+  356  cat Welcome 
+  357  cd ..
+  358  cd Wk1.2-FileManagement/
+  359  ls
+  360  cd Levy/
+  361  ls
+  362  cd A
+  363  ls
+  364  more README.txt
+  365  cat README.txt
+  366  pwd
+  367  cd ..
+  368  cd ../Wk1.1-Connecting/
+  369  ls
+  370  mv A ..
+  371  ls
+  372  cd ..
+  373  ls
+  374  mv A B
+  375  ls
+  376  ls -l
+  377  ls
+  378  cd LABTECH
+  379  ls
+  380  cd ..
+  381  ls -l
+  382  ld
+  383  ls
+  384  cd LABTECH
+  385  cd Homework/
+  386  ls
+  387  cd levyj63/
+  388  ls
+  389  emacs Section4.txt
+  390  emacs Unames.txt 
+  391  ls
+  392  cat Unames.txt 
+  393  pwd
+  394  ls
+  395  more make_folders
+  396  cat make_folders
+  397  ls
+  398  ls -l
+  399  chmod LABTECH 744
+  400  chmod 744 LABTECH
+  401  ls
+  402  ls -;
+  403  ls -l
+  404  ls
+  405  ls -l
+  406  man setfacl
+  407  ls
+  408  cd LABTECH
+  409  ls
+  410  chmod 744 Wk1.1-Connecting/
+  411  ls
+  412  ls -l
+  413  ls -lls
+  414  ls
+  415  ll
+  416  chmod 754 Wk1.1-Connecting/
+  417  ll
+  418  cd ..
+  419  ls
+  420  chmod 700 LABTECH
+  421  ls
+  422  setfacl -m mask:rwx LABTECH
+  423  cd LABTECH
+  424  LS
+  425  ls
+  426  ll
+  427  cd Wk1.1-Connecting/
+  428  ls
+  429  cd ..
+  430  cd Homework/
+  431  ld
+  432  ll
+  433  chmod Grades 755
+  434  chmod 755 Grades/
+  435  ls
+  436  ll
+  437  cd Grades/
+  438  ls
+  439  emacs make_folders
+  440  cp make_folders ..
+  441  ls
+  442  cd ..
+  443  ls
+  444  mv make_folders set_dir_perms
+  445  ls
+  446  mv set_dir_perms Grades/
+  447  ls
+  448  cd Grades/
+  449  ls
+  450  emacs set_dir_perms 
+  451  ls
+  452  cd ..
+  453  ls
+  454  chmod 700 levyj63 
+  455  ll
+  456  chmod 700 Grades
+  457  ls
+  458  ll
+  459  ls
+  460  cd Grades/
+  461  ls
+  462  ll
+  463  emacs GradeSample
+  464  pwd
+  465  cp GradeSample~ /home/levyj63/LABTECHF2018/
+  466  cd ..
+  467  ls
+  468  cd ..
+  469  ls
+  470  cd levyj63
+  471  ls
+  472  chmod 700 LABTECHF2018/
+  473  ls
+  474  ll
+  475  getfacl LABTECH
+  476  cd LABTECH
+  477  ls
+  478  rm B
+  479  ls
+  480  getfacl Homework/
+  481  cd Homework/
+  482  ls
+  483  cd levyj63/
+  484  ls
+  485  cd ..
+  486  ls
+  487  cd Grades/
+  488  ls
+  489  cp set_dir_perms* ../levyj63/
+  490  ls
+  491  cp set_dir_perms ../levyj63/
+  492  ls
+  493  cd ../levyj63/
+  494  ls
+  495  emacs set_dir_perms
+  496  ls
+  497  emacs set_dir_perms
+  498  echo $IFS
+  499  ls
+  500  emacs set_dir_perms
+  501  cat Section3
+  502  cat Section3.txt
+  503  cat Sec3Unames 
+  504  ./set_dir_perms
+  505  ./set_dir_perms LABTECHauriemmat6 chletsosa2 digiovann9 dougla58 elliottt1 fooksd3 grossj3 herrmanb6 hudake4 jacobsd1 karawa53 kropinack0 krupin52 lambec37 leesmanz5 lentzt3 lunskj9 malonem6 mccabeb6 morris85 patels78 quinlanr1 rodrig23 stansfiek0 strickonj8 ventolaz4 zacierkam7
+  506  emacs set_dir_perms
+  507  emacs make_folders
+  508  emacs set_dir_perms
+  509  cd ..
+  510  cd Grades/
+  511  ls
+  512  emacs fix_perms 
+  513  emacs GradeSample
+  514  cd ..
+  515  ls
+  516  cd H
+  517  cd levyj63/
+  518  ls
+  519  emacs set_dir_perms
+  520  ./set_dir_perms LABTECH auriemmat6 chletsosa2 digiovann9 dougla58 elliottt1 fooksd3 grossj3 herrmanb6 hudake4 jacobsd1 karawa53 kropinack0 krupin52 lambec37 leesmanz5 lentzt3 lunskj9 malonem6 mccabeb6 morris85 patels78 quinlanr1 rodrig23 stansfiek0 strickonj8 ventolaz4 zacierkam7
+  521  emacs set_dir_perms
+  522  ./set_dir_perms LABTECH auriemmat6 chletsosa2 digiovann9 dougla58 elliottt1 fooksd3 grossj3 herrmanb6 hudake4 jacobsd1 karawa53 kropinack0 krupin52 lambec37 leesmanz5 lentzt3 lunskj9 malonem6 mccabeb6 morris85 patels78 quinlanr1 rodrig23 stansfiek0 strickonj8 ventolaz4 zacierkam7
+  523  cd ..
+  524  ls
+  525  cd ..
+  526  ls
+  527  cd ..
+  528  ll
+  529  ls -v LABTECH
+  530  ls -v
+  531  getfacl LABTECH
+  532  ls
+  533  cd LABTECH
+  534  ls
+  535  cd Homework/
+  536  ls
+  537  cd levyj63/
+  538  ls
+  539  emacs set_dir_perms
+  540  set -p
+  541  set +p
+  542  shopt -p
+  543  opt -p
+  544  set -o noclobber
+  545  set -o
+  546  ls
+  547  emacs set_dir_perms
+  548  cat Section4.txt
+  549  cat Unames.txt 
+  550  ./set_dir_perms LABTECH abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  551  ls
+  552  emacs set_dir_perms
+  553  ./set_dir_perms LABTECH abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  554  cd ..
+  555  ls
+  556  cd ..
+  557  ls
+  558  cd ..
+  559  ll
+  560  getfacl LABTECH
+  561  ./set_dir_perms LABTECH/Wk1.1-Connecting/ abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  562  ls
+  563  cd LABTECH
+  564  cd Homework/
+  565  cd Grades/
+  566  ls
+  567  ./set_dir_perms LABTECH/Wk1.1-Connecting/ abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  568  cd ..
+  569  ls
+  570  getfacl Wk1.1-Connecting/
+  571  ./set_dir_perms 'LABTECH/Wk1.1-Connecting/' abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  572  cd H
+  573  cd Homework/
+  574  ls
+  575  cd Grades/
+  576  ./set_dir_perms 'LABTECH/Wk1.1-Connecting/' abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  577  cd ..
+  578  ls
+  579  cd ..
+  580  ls
+  581  ll
+  582  getfacl Wk1.1-Connecting/
+  583  cd ..
+  584  getfacl LABTECH
+  585  ls
+  586  cd LABTECH
+  587  cd ..
+  588  ll
+  589  setfacl -b LABTECH
+  590  ll
+  591  cd LABTECH
+  592  cd Homework/
+  593  cd Grades/
+  594  ls
+  595  rm set_dir_perms
+  596  rm set_dir_perms~ 
+  597  cd ..
+  598  ls
+  599  cd levyj63/
+  600  ls
+  601  emacs set_dir_perms
+  602  ./set_dir_perms LABTECH abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  603  cd ..
+  604  ls
+  605  cd ..
+  606  ;s
+  607  ls
+  608  cd ..
+  609  ll
+  610  getfacl LABTECH
+  611  ls
+  612  cd LABTECH
+  613  ll
+  614  cd Homework/
+  615  ls
+  616  cd le
+  617  cd levyj63/
+  618  ls
+  619  cat Unames.txt 
+  620  cat Sec3Unames 
+  621  ./set_dir_perms LABTECH auriemmat6 chletsosa2 digiovann9 dougla58 elliottt1 fooksd3 grossj3 herrmanb6 hudake4 jacobsd1 karawa53 kropinack0 krupin52 lambec37 leesmanz5 lentzt3 lunskj9 malonem6 mccabeb6 morris85 patels78 quinlanr1 rodrig23 stansfiek0 strickonj8 ventolaz4 zacierkam7
+  622  emacs Sec5Names
+  623  tr '\r\n' ' ' Sec5Names 
+  624  man tr
+  625  sed 's/@students.rowan.edu//g' Sec5Names
+  626  sed 's/@students.rowan.edu//g' Sec5Names > Sec5.txt
+  627  ls
+  628  cat Sec5.txt
+  629  lsman sed
+  630  man sed
+  631  tr Sec5.txt '\r\n' ' '
+  632  man tr
+  633  cat Sec5.txt | tr '\r\n' ' '
+  634  cat Sec5.txt | tr '\r\n' ' '> Sec5Names
+  635  cat Sec5.txt | tr '\r\n' ' '> Sec5Users
+  636  cat Sec5Users 
+  637  ls
+  638  ./set_dir_perms LABTECH adeniy86 alesto86 altman47 baban8 bonsal32 boucherr9 dhillonj2 doylei19 eberlew1 feej0 galvinb2 greenb2 jonesb1 katzza54 khanmo67 morell22 nwanne93 obrienp4 oliver94 ottdyl83 panseraj3 pereirab2 rosasa39 sahins85 steent48 townleyr4 valentid0
+  639  cd ../../../
+  640  ls
+  641  ll
+  642  getfacl LABTECH
+  643  setfacl -b
+  644  setfacl -b LABTECH
+  645  ls
+  646  ll
+  647  cd LABTECH
+  648  cd Homework/
+  649  cd levyj63/
+  650  ls
+  651  emacs set_dir_perms
+  652  ./set_dir_perms LABTECH adeniy86 alesto86 altman47 baban8 bonsal32 boucherr9 dhillonj2 doylei19 eberlew1 feej0 galvinb2 greenb2 jonesb1 katzza54 khanmo67 morell22 nwanne93 obrienp4 oliver94 ottdyl83 panseraj3 pereirab2 rosasa39 sahins85 steent48 townleyr4 valentid0
+  653  ./set_dir_perms LABTECH auriemmat6 chletsosa2 digiovann9 dougla58 elliottt1 fooksd3 grossj3 herrmanb6 hudake4 jacobsd1 karawa53 kropinack0 krupin52 lambec37 leesmanz5 lentzt3 lunskj9 malonem6 mccabeb6 morris85 patels78 quinlanr1 rodrig23 stansfiek0 strickonj8 ventolaz4 zacierkam7
+  654  ./set_dir_perms LABTECH abbott88 austind6 borrel46 bulloc56 cacere59 catalinaa2 chanr9 chowd9 clella77 dongarrar2 dumitr58 georgem0 gillc5 kaminskik6 kozama38 leptienk0 marinarom0 maurer22 nguyenk8 pangc7 patelm69 podwatsj6 rosfjordz9 tistanc1 vogtma64 wheele78 xiexia69
+  655  ls
+  656  cd ..
+  657  ls
+  658  ll
+  659  cd ..
+  660  ls
+  661  ll
+  662  cd ..
+  663  ls
+  664  ll
+  665  getfacl LABTECH
+  666  ls 
+  667  cd LABTECH
+  668  ls
+  669  cd Homework/
+  670  cd levyj63/
+  671  ls
+  672  emacs set_dir_perms
+  673  cd /home/levyj63/LABTECH
+  674  ced ..
+  675  cd ..
+  676  ll
+  677  getfacl LABTECH
+  678  cd LABTECH
+  679  ls
+  680  cd Homework/
+  681  ls
+  682  cd G
+  683  cd Grades/
+  684  ls
+  685  cd ..
+  686  cd levyj63
+  687  ls
+  688  cat Sec5Users 
+  689  cat Sec3Unames 
+  690  setfacl -m user:zacierkam7:rwx /home/levyj63/LABTECH
+  691  cd ..
+  692  ls
+  693  pwd
+  694  cd Homework/
+  695  ls
+  696  cd ..
+  697  ls
+  698  cd Wk1.1-Connecting/
+  699  ll\
+  700  ll
+  701   cd ..
+  702  ll
+  703  cd Homework/
+  704  ll
+  705  cd ..
+  706  ll
+  707  ./Welcome
+  708  cd Wk1.1-Connecting/
+  709  ls
+  710  ./Welcome 
+  711  cd ~
+  712  pwd
+  713  ls
+  714  mv Wk1.1-Connecting LABTECH/
+  715  man cp
+  716  more history.txt
+  717  ls
+  718  cd LABTECH
+  719  ls
+  720  cd LABTECH/
+  721  ls
+  722  cd ..
+  723  ls
+  724   mv LABTECH/ Wk1.1-Connecting
+  725  ls
+  726  cd Wk1.1-Connecting/
+  727  ls
+  728  touch A
+  729  ls
+  730  history > history.txt
+  731  ls
+  732  more history.txt
+  733  man man
+  734  clear
+  735  man stat
+  736  man man
+  737  clear
+  738  ls -l
+  739  pwd
+  740  cd /home/levyj63/LABTECH
+  741  getfacl LABTECH
+  742  cd ..
+  743  getfacl LABTECH
+  744  setfacl -m mask:rwx user:trieuj77
+  745  setfacl -m user:trieuj77:rwx /home/levyj63/LABTECH
+  746  ll
+  747  cd LABTECH
+  748  ll
+  749  cd Wk1.1-Connecting/
+  750  ls
+  751  rm A
+  752  rm history.txt 
+  753  ./Welcome
+  754  cd ..
+  755  ls
+  756  pwd
+  757  cd
+  758  cd -
+  759  ls
+  760  cd Wk1.1-Connecting/
+  761  cat Welcome 
+  762  cd ..
+  763  ls
+  764  cd ..
+  765  ls
+  766  getfacl LABTECH
+  767  setfacl -m user:xiexia69:rwx /home/levyj63/LABTECH
+  768  cd LABTECH
+  769  ls
+  770  cd Wk1.1-Connecting/
+  771  touch A
+  772  ls
+  773  rm A
+  774  pwd
+  775  history > history.txt
+  776  ls
+  777  cat history.txt
+  778  man cp\
+  779  more history.txt 
+  780  man more
+  781  cd LABTECH
+  782  ls
+  783  ll
+  784  chmod 755 Wk1.2-FileManagement/
+  785  ls
+  786  ll
+  787  cd cd ..
+  788  cd ..
+  789  ls
+  790  getfacl LABTECH
+  791  cd ..
+  792  ls
+  793  cd levyj63/
+  794  cd LABTECH
+  795  ;s
+  796  ls
+  797  chmod 755 Wk1.2-FileManagement/
+  798  ls
+  799  cd Wk1.2-FileManagement/
+  800  ];s
+  801  ls
+  802  chmod 755 Levy/
+  803  chmod -r 755 Levy/
+  804  chmod 755 Levy/
+  805  cd Levy/
+  806  chmod 755 A
+  807  chmod 755 Class/
+  808  ls
+  809  cd Class/
+  810  chmod 755 A
+  811  cd Class/
+  812  chmod 755 B
+  813  chmod 755 C
+  814  ls
+  815  cd ..
+  816  ls
+  817  cd ..
+  818  ls
+  819  cd Wk1.2-FileManagement/
+  820  ;s
+  821  ls
+  822  cd Levy/\
+  823  cd A
+  824  ls
+  825  chmod 755 README.txt
+  826  cd ..
+  827  cd Class/
+  828  ls
+  829  cd A
+  830  ll
+  831  chmod 755 *p*
+  832  ll
+  833  chmod 755 Poe.txt 
+  834  ls
+  835  cd ..
+  836  sl
+  837  ls
+  838  cd B/
+  839  ;s
+  840  ls
+  841  chmod 755 *.[cho]
+  842  chmod 755 [JT]im
+  843  ll
+  844  cd ..
+  845  ls
+  846  cd C
+  847  ;s
+  848  ls
+  849  rmdir D E F
+  850  rm -r D E F
+  851  ls
+  852  chmod b{an,ed,olt}
+  853  chmod 755 b{an,ed,olt}
+  854  chmod 755 b{ank,ed,olt}
+  855  chmod 755 bolts
+  856  ll
+  857  cd ..
+  858  ll
+  859  cd ..
+  860  cp -r /home/levyj63/LABTECH/Wk1.2-FileManagement/ .
+  861  ls
+  862  cd Wk1.2-FileManagement/
+  863  ls
+  864  cd Levy/
+  865  cd Class/
+  866  ls
+  867  cd A
+  868  ls
+  869  ls ape.txt
+  870  ls -l ape.txt
+  871  ls -a
+  872  ls ?p.txt
+  873  ls -l p*.txt
+  874  ls -l *p*.txt
+  875  cd ../B
+  876  ls
+  877  ls -l hello.[cho]
+  878  touch hello.com
+  879  ls -l hello.[cho]
+  880  ls -l hello.[!ho]
+  881  vi test.txt
+  882  emacs test.txt
+  883  emacs helloWorld.c
+  884  cc -o helloWorld helloWorld.c
+  885  ./helloWorld 
+  886  emacs helloWorld.c
+  887  cc -o helloWorld helloWorld.c
+  888  ./helloWorld
+  889  ls
+  890  cd ..
+  891  ls
+  892  cd ..
+  893  ls
+  894  cd A
+  895  ls
+  896  more README.txt
+  897  head -20 README.txt
+  898  tail -20 README.txt
+  899   head -20 README.txt | tail -10
+  900  cd
+  901  emacs .bashrc
+  902  ls -a
+  903  emacs .bash_profile
+  904  emacs .bashrc
+  905  cd LABTECH/Wk1.2-FileManagement/
+  906  cd Levy/
+  907  cd A
+  908  ls
+  909  more README.txt
+  910  ls
+  911  cd LABTECH
+  912  ls
+  913  cd Wk1.2-FileManagement/
+  914  ls
+  915  cd Levy/
+  916  ls
+  917  cd ..
+  918  ls
+  919  cd ..
+  920  ls
+  921  ll
+  922  chmod 744
+  923  chmod 744 Wk1.2-FileManagement/
+  924  ll
+  925  ls
+  926  cd Wk1.2-FileManagement/
+  927  ls
+  928  cd Levy/
+  929  ls
+  930  cd A
+  931  ls
+  932  cd ..
+  933  cd Class/
+  934  ls
+  935  cd A
+  936  la
+  937  ll
+  938  ls
+  939  rm Student1 
+  940  ls
+  941  emacs pugs.txt
+  942  emacs apple.txt
+  943  emacs ape.txt
+  944  emacs Up.txt
+  945  emacs Poe.txt
+  946  emacs pi.txt
+  947  cd ../B
+  948  ls
+  949  rm Student2 
+  950  ls
+  951  touch program.c
+  952  touch program.o
+  953  touch touch Jim
+  954  touch Tim
+  955  ls
+  956  rm touch
+  957  ls
+  958  touch program.h
+  959  ls
+  960  touch hello.c
+  961  touch hello.o
+  962  touch hello.h
+  963  cd ../C
+  964  touch
+  965  touch bed
+  966  touch bolt
+  967  touch bolts
+  968  touch bank
+  969  man stat
+  970  ls
+  971  cd LABTECH
+  972  ls
+  973  cd Wk1.2-FileManagement/
+  974  ls
+  975  cd Levy/
+  976  ls
+  977  mv A Notes
+  978  ls
+  979  cd Class/
+  980  ls
+  981  cd A
+  982  ls
+  983  touch pebble.txt 
+  984  ls
+  985  emacs pebble.txt 
+  986  ls
+  987  rm pebble.txt~
+  988  ls
+  989  cd ..
+  990  ls
+  991  cd ..
+  992  ls
+  993  cd ..
+  994  l
+  995  cd ..
+  996  cd LABTECHF2018/
+  997  ls
+  998  cd LABTECH/
+  999  ls
+ 1000  cd 2.1
+ 1001  cd LABTECH
+ 1002  ls
+ 1003  ll
+ 1004  cp -r /home/levyj63/LABTECH/Wk1.2-FileManagement/ .
+ 1005  chmod -R 755 Wk1.2-FileManagement/
+ 1006  cd Wk1.2-FileManagement/
+ 1007  ls
+ 1008  cd Levy/
+ 1009  ll
+ 1010   cd Notes/
+ 1011  more *
+ 1012  less *
+ 1013  cat *
+ 1014  head README.txt
+ 1015  tail README.txt
+ 1016  ls -l
+ 1017  ls README.txt
+ 1018  cd ..
+ 1019  ls
+ 1020  cd Class
+ 1021  ls
+ 1022  cd A
+ 1023  ll
+ 1024  touch pa
+ 1025  ls p?
+ 1026  touch op.txt
+ 1027  ?p.txt
+ 1028  ls ?p.txt
+ 1029  ls p*
+ 1030  a*.txt
+ 1031  ls a*.txt
+ 1032  ls ?p*
+ 1033  touch app
+ 1034  ls ?p*
+ 1035  touch up
+ 1036  ls ?p*
+ 1037  [auo]p.txt
+ 1038  ls [auo]p.txt
+ 1039  ls [a-z]p.txt
+ 1040  ls [A-Z]p.txt
+ 1041  ls [!ao].txt
+ 1042  ls [!ao]p.txt
+ 1043  cd ../B
+ 1044  ll
+ 1045  ls hello.*
+ 1046  ls hello.?
+ 1047  ls hello.[cho]
+ 1048  ls ?p.txt ../A
+ 1049  ls ?p.txt '../A'
+ 1050  ls hello.*
+ 1051  ls A*
+ 1052  ls [!0-9]*.?
+ 1053  [a-zA-Z0-9]?.*
+ 1054  ls [a-zA-Z0-9]?.*
+ 1055  ls
+ 1056  ls ???
+ 1057  touch bank
+ 1058  touch bark bolt bed
+ 1059  ls b{ar, ed}
+ 1060  ls b{ar,\ed}
+ 1061  ls b{ar,ed}
+ 1062  ls b{ank,ark}
+ 1063  b{ar,an}k
+ 1064  ls *.{c,h,o}
+ 1065  ls
+ 1066  vi test.txt
+ 1067  emacs test.txt
+ 1068  mv test.txt test.c
+ 1069  ls
+ 1070  emacs test.c
+ 1071  mv test.txt test.c
+ 1072  stat test.c
+ 1073  cc -o helloTest test.c
+ 1074  ll
+ 1075  ./helloTest
+ 1076  emacs test.c
+ 1077  cc -o helloTest test.c
+ 1078  ./helloTest
+ 1079  cc test.c
+ 1080  ls
+ 1081  history >> history.txt

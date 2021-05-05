@@ -1,0 +1,30 @@
+#! /bin/bash
+#Jake Levy August 2019
+# works on the Dayman.txt file, used in my sed lecture
+
+#an awk script that improves on the previous and allows for "dynamic variables"
+
+
+#Notice how the slight differences in syntax
+# In this script (a bash script not an awk script) we grab a variable from the
+# shell command line (which can be anything).  We are able to do this because
+# of how quoting and variable expansion work in the shell.
+
+#Usage Example:  ./DaymanAwkBash textToReplace file
+if (($# < 2 )); then
+       echo "Not enough Arguments!"
+       echo "Usage: ./DaymanAwkBash textToReplace file"
+       exit
+fi
+     
+replacement=$1
+
+awk '/'$replacement'/{
+    for (i = 1; i <= NF; i++){ #have to use traditional for, $0 is not an array
+	if ($i ~ /'$replacement'/){
+	    $i = "Troll"
+    }
+	
+    }
+    print $0
+}' $2

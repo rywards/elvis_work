@@ -1,0 +1,5 @@
+dog(snoopy).
+dog(fido).
+seal(harold).
+barks(X) :- dog(X).
+barks(X) :- seal(X).

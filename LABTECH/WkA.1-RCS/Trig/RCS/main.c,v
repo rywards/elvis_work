@@ -1,0 +1,261 @@
+head	1.11;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.11
+date	2020.04.07.14.40.32;	author edward74;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2020.04.07.14.33.23;	author edward74;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2020.04.07.14.28.48;	author edward74;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2020.04.07.14.21.54;	author edward74;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2020.04.07.14.19.25;	author edward74;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2020.04.07.14.13.13;	author edward74;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2020.04.07.14.05.44;	author edward74;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2020.04.07.14.00.58;	author edward74;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2020.04.07.13.54.47;	author edward74;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2020.04.07.12.43.56;	author edward74;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.04.07.12.38.48;	author edward74;	state Exp;
+branches;
+next	;
+
+
+desc
+@This is the main file for the trig program
+@
+
+
+1.11
+log
+@Tried moving the radians to just before the print statements to fix it
+@
+text
+@/* main.c - main section of "trig" project
+ *
+ * DFP
+ */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+static const char rcsid[]= "$Id: main.c,v 1.10 2020/04/07 14:33:23 edward74 Exp edward74 $";
+int main(int argc, char *argv[])
+{
+  double angle;
+  void sine(double), cosine(double), tangent(double);
+  
+  if (argc < 2) {
+      angle = 45.0;
+  } else {
+      //angle = (double) atof(argv[1]);
+      angle = strtod(argv[1], NULL);
+  }
+
+  double radians=(angle * M_PI)/180;
+  printf("Angle in degrees: %lf\n", angle);
+  printf("Angle in radians: %lf\n", radians);
+  
+  sine(angle);
+  cosine(angle);
+  tangent(angle);
+
+  return 0;
+}
+@
+
+
+1.10
+log
+@No change
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.9 2020/04/07 14:28:48 edward74 Exp edward74 $";
+a13 2
+  double radians=(angle * M_PI)/180;
+ 
+d23 1
+@
+
+
+1.9
+log
+@Tried again to fix this radian printing
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.8 2020/04/07 14:21:54 edward74 Exp edward74 $";
+d14 2
+a15 1
+  double radians=((angle) * (M_PI/180));
+@
+
+
+1.8
+log
+@Tried, once again, to fix radians printing 0
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.7 2020/04/07 14:19:25 edward74 Exp edward74 $";
+d14 1
+a14 1
+  double radians=(angle * M_PI)/180;
+d24 2
+a25 2
+  printf("Angle in degrees: %f\n", angle);
+  printf("Angle in radians: %f\n", radians);
+@
+
+
+1.7
+log
+@Tried to fix wrong radian output again
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.6 2020/04/07 14:13:13 edward74 Exp edward74 $";
+d14 1
+a14 1
+  
+d24 2
+a25 2
+  printf("Angle in degrees: %lf\n", angle);
+  printf("Angle in radians: %lf\n", angleRad);
+@
+
+
+1.6
+log
+@Tried to fix radians; wasn't printing right number
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.5 2020/04/07 14:05:44 edward74 Exp edward74 $";
+d14 1
+a14 1
+  double radians=(angle * M_PI)/180;
+d25 1
+a25 1
+  printf("Angle in radians: %lf\n", radians);
+@
+
+
+1.5
+log
+@Fixed format specifier
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.4 2020/04/07 14:00:58 edward74 Exp edward74 $";
+d14 1
+a14 1
+  double angleRad=(angle * M_PI)/180;
+d25 2
+a26 1
+  printf("Angle in radians: %lf\n", angleRad);
+@
+
+
+1.4
+log
+@Fixed formatting
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id: main.c,v 1.3 2020/04/07 13:54:47 edward74 Exp edward74 $";
+d24 2
+a25 2
+  printf("Angle in degrees: %d\n", angle);
+  printf("Angle in radians: %d\n", angleRad);
+@
+
+
+1.3
+log
+@Added rcsid and radian printing.
+@
+text
+@d10 1
+a10 1
+static const char rcsid[]= "$Id$";
+d24 2
+a25 2
+  printf("Angle in degrees: %d", angle);
+  printf("Angle in radians: %d", angleRad);
+@
+
+
+1.2
+log
+@corrected tangent declaration
+@
+text
+@d7 2
+d10 1
+d14 1
+d16 1
+a16 1
+
+d24 2
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d11 1
+a11 1
+  void sine(double), cosine(double), tangen(double);
+@

@@ -1,0 +1,11 @@
+s.*r
+t[^a]*e
+e[^aeiouy]*[aeiouy]
+[^a-z]..s
+[Ii]t.*t[^a-z\.]
+[Tt].*te
+t.*[mr]e
+[aeiou].[^aeiou]*.
+a.*e[^a-z]
+e.*s.*e.
+^.*$

@@ -1,0 +1,6 @@
+This is sample text
+
+Working things
+
+Line COPY.
+exit

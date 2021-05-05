@@ -1,0 +1,6 @@
+\b\w{8}\s\b\w{7}
+a .*me
+\b[\sefhot]{6}\b
+t.*nt
+a\s\w{5}
+I.*l\s

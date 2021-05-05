@@ -1,0 +1,12 @@
+(define (occurs Item L)
+	; Returns number of occurrences of Item in list L
+	; ex: (occurs 4 '(3 8 10 4 2 4)) returns 2
+	; (occurs 'a '(a b a a c)) returns 3
+	; Base case: Empty -> 0
+	; Recursive case 1 - Item matches car
+	; Recursive case 2 - Item does not match car
+	(cond ((null? L) 0)
+	      ((equal? Item (car L))
+	      	       	    (+ 1 (occurs Item (cdr L))))
+	      (else
+				(occurs Item (cdr L))) ))

@@ -1,0 +1,14 @@
+/*hello.c - Practicing submission
+*
+*
+*Ryan Edwards
+*/
+
+#include <stdio.h>
+
+int main(){
+    printf("Hello Professor Levy, this is Ryan Edwards."\n);
+
+    return 0;
+
+}

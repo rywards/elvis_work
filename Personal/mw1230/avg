@@ -1,0 +1,2 @@
+average(X, Y, Z, Avg) :- Avg is (X + Y + Z)/3.
+

@@ -1,0 +1,16 @@
+#! /bin/awk
+
+# a version of what we just did on the command line
+#but now in an "interpreted" awk script.  Basically
+# we are now writing files that will be read by the
+#awk interpreter and run by it directly rather than
+#using the shell to call it
+
+
+NR == 1{
+    
+    print "#\t" $2 "\t" $1 "\t" $5
+}
+NR > 1{
+    print NR-1":\t"$2"\t"$1"\t"$5
+}

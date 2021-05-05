@@ -1,0 +1,16 @@
+#! /bin/bash
+
+
+# A simple script to demo the differences between local
+# and global variables in bash
+#variables defined with local declarator are local to their code block and
+# do not have an effect outside of the function
+function simpleFunction(){
+    local var1="Var1: Inside Function" 
+    echo $var1
+}
+
+var1="Var1: Outside Function"
+echo $var1
+simpleFunction
+echo $var1

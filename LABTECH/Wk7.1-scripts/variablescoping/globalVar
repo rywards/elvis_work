@@ -1,0 +1,29 @@
+#! /bin/bash
+
+# globalVar
+# a simple script demonstating the difference between variable
+# scoping in bash scripts.
+# Jake Levy
+# Apr 2019
+
+# functions are easily defined in bash scripts (and in the shell itself)
+# functions defined in a shell instance last only as long the current
+# session (unless we include them in our .bash_profile or .bashrc files)
+#  However those we define inside scripts have a bit more permanence
+
+# variables defined inside a function are NOT local unless specifically
+# designated as such.  All variables are global otherwise.
+function simpleFunction(){
+    var1="var1:  inside function" 
+    echo $var1
+}
+
+# Put main code in a main function
+function main(){
+    var1="var1:  outside function" #initialize var1
+    echo $var1 
+    simpleFunction #simpleFunction assigns a value to the var1
+    echo $var1 # the value has been changed
+}
+
+main

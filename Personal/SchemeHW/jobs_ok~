@@ -1,0 +1,66 @@
+(define (jobs_ok? Assignment Employees)
+	; Function to check if job assignments
+ 	; are valid
+	; Assignment was worked on with the help of Matthew Edelman
+	; We discussed the problem but decided to submit separately
+        (dupes? (get_all_employees (car Assignment) (cadr Assignment) (caddr Assignment) (cadddr Assignment)))
+        (if (dupes? (get_all_employees (car Assignment) (cadr Assignment) (caddr Assignment) (cadddr Assignment)))
+                #F
+                (checkShifts? Assignment Employees)
+        )
+)
+
+(define (checkShifts? Assignment Employees)
+
+        (cond
+            ((null? Assignment) #T)
+            ((is_bad_shift? (car Assignment) Employees) #F)
+            ((checkShifts? (cdr Assignment) Employees) #T)
+                (else #F)
+        )
+)
+
+(define (is_bad_shift? shiftlist Employees)
+	; Function to check if shifts are valid
+	; Returns #T if good, #F if bad
+
+        (cond
+	        ((bad_assignment? Employees (car shiftlist) 1) #T)
+                ((bad_assignment? Employees (cadr shiftlist) 1) #T)
+                ((bad_assignment? Employees (caddr shiftlist) 2) #T)
+                ((bad_assignment? Employees (cadddr shiftlist) 3) #T)
+                (else #F)
+        )
+)
+
+(define (bad_assignment? Employees person job)
+	; Function to check if assignment is bad
+        (cond
+                ((null? Employees) #F)
+                ((if (and (equal? (caar Employees) person)  (not (equal? 1 (list-ref (car Employees) job)))) #T #F) #T)
+                ((bad_assignment? (cdr Employees) person job) #T)
+                (else #F)
+        )
+)
+
+(define (get_all_employees shift1 shift2 shift3 shift4)
+                (merge (merge (merge shift1 shift2) shift3) shift4)
+		; Merging list of employees into one list
+)
+
+(define (merge list1 list2)
+      (if (null? list1) list2
+          (if (null? list2) list1
+              (cons (car list1) (cons (car list2) (merge (cdr list1) (cdr list2)))))))
+
+(define (dupes? AllShifts)
+        (cond
+                ((null? AllShifts) #F)
+                ((if (equal? (member (car AllShifts) (cdr AllShifts)) #F) #F #T) #T)
+                ((dupes? (cdr AllShifts)) #T)
+                (else #F)
+        )
+)
+
+
+	

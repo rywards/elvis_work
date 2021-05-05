@@ -1,0 +1,72 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.3
+date	2020.04.07.13.32.17;	author edward74;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2020.04.07.13.00.07;	author edward74;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.04.07.12.47.26;	author edward74;	state Exp;
+branches;
+next	;
+
+
+desc
+@Editing to radians
+@
+
+
+1.3
+log
+@Added angleRad to output
+@
+text
+@/* tangent.c - part of the "trig" project
+ *
+ * DFP
+ */
+
+#include <stdio.h>
+#include <math.h>
+
+static const char rcsid[] = "$Id: tangent.c,v 1.2 2020/04/07 13:00:07 edward74 Exp edward74 $";
+void tangent(double angle)
+{
+  double angleRad=(angle * M_PI)/180;
+  printf("tan(%lf) = %lf\n", angle, tan(angleRad));
+}
+@
+
+
+1.2
+log
+@added rcsid
+@
+text
+@d9 1
+a9 1
+static const char rcsid[] = "$Id$";
+d13 1
+a13 1
+  printf("tan(%lf) = %lf\n", angle, tan(angle));
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d9 1
+d12 1
+@

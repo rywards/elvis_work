@@ -1,0 +1,46 @@
+#! /bin/bash
+
+# 1) the number of args is at least the minimum req'd amount\
+
+#       a source, a destination, and a file type to move
+# 2) the first & second  arguments are directories and exist\
+# 3) the destination is empty
+# 4) They are different directories (this should be familiar\
+
+
+if (( $# < 3)); then
+    echo "Not enough arguments."
+fi
+
+numArgs=$#
+
+if [ ! -d $1 ]; then
+    echo "First argument not a directory."
+    exit 1
+fi
+
+if [ ! -d $2 ]; then
+    echo "Second argument not a directory."
+    exit 1;
+fi
+
+if [ $1 = $2 ]; then
+    echo "Same directories specified"
+fi
+
+
+# if second directory is empty, continue
+if [ ! "$(ls -A $2)" ]; then
+    arr=${@:3:numArgs}
+    
+else
+    array=${@:3}
+    for fileType in "$array"
+    do
+       echo "mv $array
+    done	       
+fi
+
+   
+
+   

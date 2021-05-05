@@ -1,0 +1,27 @@
+#! /bin/awk -f
+#Jake Levy August 2019
+# works on the Dayman.txt file, used in my sed lecture
+
+#an awk script that demonstrates how awk can accomplish a "sed-style"
+# regular expression global search and replace globally
+#Notice how the syntax for doing this in sed is much shorter and concise
+
+# the ~ is a *pattern test* conditional.  If the variable contains
+#the specified regex, it evaluates to true
+
+#this method is fine for hard-coded variables but you may want to use a dynamic
+#variable.   To accomplish the use with a dynamic variable you would need to
+#write this as a bash script to use the shell (We'll do bash scripts in a
+# few weeks).  To see an example, see DaymanAwkBash
+
+#Note the comment $0 is not an array.
+
+/Dayman/{
+    for (i = 1; i <= NF; i++){ #have to use traditional for, $0 is not an array
+	if ($i ~ /Dayman/){
+	    $i = "Troll"
+    }
+	
+    }
+    print $0
+}

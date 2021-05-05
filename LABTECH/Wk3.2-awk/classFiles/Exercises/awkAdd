@@ -1,0 +1,12 @@
+#! /bin/awk -f
+
+BEGIN{FS=", "}
+#If record Number greater than 1
+NR>1{
+#if they live in PA
+    if ($5 == "PA"){
+	#print an address label
+	print $2" "$1"\n"$3"\n"$4", "$5" "$6"\n"
+    }
+}
+    

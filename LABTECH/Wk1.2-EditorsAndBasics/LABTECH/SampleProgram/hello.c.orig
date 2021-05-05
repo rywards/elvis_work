@@ -1,0 +1,16 @@
+/*hello.c - Sample program practicing submission
+ *
+ *
+ *Ryan Edwards
+ *
+ */
+
+#include<stdio.h>
+
+int main(){
+
+  printf("Hello professor\n");
+
+  return 0;
+
+}

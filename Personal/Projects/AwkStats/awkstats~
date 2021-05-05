@@ -1,0 +1,20 @@
+#! /bin/awk -f
+# Ryan Edwards
+
+
+/[0-9]+/{ 
+    
+    
+    if ($0 != 0 &&  NF == 1){#if the line is not 0 and there's only 1 field
+	if ($0 !~ /[A-Za-z]/){  #if it contains no letters (ideally we'd expand
+	                        #this to include punctuation as well)
+	    sum+= $0  
+	    counter++
+	}
+    } else if ($0 == 0){
+	exit(0)
+
+    }
+}
+
+    END{print(sum,sum/counter)}

@@ -1,0 +1,15 @@
+(define (classify N)
+	; Function to determine if N is
+	; small, medium, or big
+	(cond ((> N 100) 'big)
+	      ((< N 50) 'small)
+	      (else 'medium)))
+
+(define (contains_big L)
+	; Function to determine
+	; if list contains 'big
+	(cond ((null? L) #F)
+	      ((eq? (classify (car L)) 'big) #T)
+	      ((else (contains_big (cdr L)))) ))
+	      	    
+	      

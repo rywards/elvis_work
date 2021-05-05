@@ -1,0 +1,12 @@
+(define (state_capital State L)
+	; Return capital of State in list L
+	; L is a list of state-capital paris.
+	; ex: (state_capital 'nj '((nj trenton) (md annapolis) (de dover)))
+	;     return trenton
+	; if no matches, return none
+	; Case 1 - Empty: none
+	; Case 2 - NonEmpty, Match at head: Return first capital
+	; Case 3 - Nonempty, No match at head: Look in cdr
+	(cond ((null? L) 'none)
+	      ((equal? State (caar L)) (cadar L))
+	      (else (state_capital State (cdr L)))))

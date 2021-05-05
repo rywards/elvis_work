@@ -1,0 +1,47 @@
+#! /bin/awk -f
+#Jake Levy
+#August 2019
+
+#a file for finding all songs in finalMusicOut.txt, under len minutes
+# where len is any integer
+#Usage:  ./hardCodeRuntimes finalMusicOut.txt
+
+# NOTE: Variable definitions must be inside some instruction block
+# if not passed in via the -v flag (only available to command line awk)
+# Here I defined it in a BEGIN block, so it is set before anything is read
+# But it could also be defined in the (NR>1) block.
+
+# If you place anything  outside of a block, the code will still work but
+# awk will think you are defining a *pattern*.
+# Trivial patterns (like an assignment) will match all lines (or at least
+# lines that you do not intend to match).
+# So you will see some confusing results (your intended output mixed
+# with unintended output)..
+
+BEGIN{len = 5}
+(NR==1){
+    printf("%20s\t%10s\n",$1, $5)
+}
+
+(NR > 1){
+
+
+    orig = $0 # store the original record
+
+   
+    FS=":"    #update input field separator to split the 5th column
+    $0 = $5;  #Re-set record to be the 5th column (minutes:seconds)
+    
+     if ($1 < len){  #$1 grabs the first part of 5th column
+
+	 FS="\t";    #reset the field separator
+	 $0 = orig;  #re-read the original line
+	print $1, "\t", $5  #print the first (Name)  and
+	                    # fifth (Runtime) columns
+     } else{
+	 FS = "\t"
+     }
+}
+    
+   
+

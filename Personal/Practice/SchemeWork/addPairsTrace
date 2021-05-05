@@ -1,0 +1,12 @@
+; tracing the add_pairs function
+
+(define  (add_pairs  x  y)
+;Return a list containing the sums of the
+;numbersinxand y:
+;(add_pairs’(1 3 5) ’(2 10 20)) returns (3 13 25).
+;Assume the lists have the same length.
+
+	(cond ((null?x)  ’())
+      	      (else  (cons  (+  (car  x)  (car  y))
+      	      	     (add_pairs  (cdr x)  (cdry))))))
+

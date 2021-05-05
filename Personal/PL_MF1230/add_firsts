@@ -1,0 +1,3 @@
+(define (add-firsts x y)
+	( + (car x) (car y) ) )
+

@@ -1,0 +1,112 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.5
+date	2020.04.07.13.40.39;	author edward74;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2020.04.07.13.39.08;	author edward74;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2020.04.07.13.36.11;	author edward74;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2020.04.07.13.27.28;	author edward74;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.04.07.13.20.45;	author edward74;	state Exp;
+branches;
+next	;
+
+
+desc
+@Changing degrees to radians
+@
+
+
+1.5
+log
+@Added parentheses at line 14
+@
+text
+@/* cosine.c - part of the "trig" project
+ *
+ * DFP
+ */
+
+#include <stdio.h>
+#include <math.h>
+
+// This gets rcs information
+static const char rcsid[] = "$Id: cosine.c,v 1.4 2020/04/07 13:39:08 edward74 Exp edward74 $";
+void cosine(double angle)
+{
+  double angleRad=(angle * M_PI)/180;
+  printf("cos(%lf) = %lf\n", angle, cos(angleRad));
+}
+@
+
+
+1.4
+log
+@Fixed angleRad; forgot the assignment operator
+@
+text
+@d10 1
+a10 1
+static const char rcsid[] = "$Id: cosine.c,v 1.3 2020/04/07 13:36:11 edward74 Exp edward74 $";
+d14 1
+a14 1
+  printf("cos(%lf) = %lf\n", angle, cos(angleRad);
+@
+
+
+1.3
+log
+@Added angleRad function
+@
+text
+@d10 1
+a10 1
+static const char rcsid[] = "$Id: cosine.c,v 1.2 2020/04/07 13:27:28 edward74 Exp edward74 $";
+d13 1
+a13 1
+  double angleRad(angle * M_PI)/180
+@
+
+
+1.2
+log
+@Added rcsid
+@
+text
+@d10 1
+a10 1
+static const char rcsid[] = "$Id$";
+d13 2
+a14 2
+  
+  printf("cos(%lf) = %lf\n", angle, cos(angle));
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d9 2
+d13 1
+@

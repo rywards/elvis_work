@@ -1,0 +1,76 @@
+(define (num_pos L)
+	; Return the number of positive numbers in list L
+	; Example: (num_pos '(4 8 -2 0 1 -13)) returns 3
+
+	; Base case: Empty -> 0
+	; Recursive case 1: Car is positive
+	;	(4 | 8 -2 0 1 -13)
+	;		Positives in cdr: 2	<-- recursive call
+	;	Add 1 to the number of positives in the cdr
+	; Recursive case 2: Car not positive
+	;	(-4 | 8 -2 0 1 -13)
+	;		Positives in cdr: 2	<-- recursive call
+	;	Return the number of positives in the cdr
+
+	(cond	((null? L)	0)
+		((> (car L) 0)	(+ 1 (num_pos (cdr L))))
+		(else		(num_pos (cdr L))) ))
+
+
+(define (list_pos L)
+	; Return a list of the positive numbers in list L
+	; Example: (list_pos '(4 8 -2 0 1 -13)) returns (4 8 1)
+
+	; Base case: Empty -> ( )
+	; Recursive case 1: Car is positive
+	;	(4 | 8 -2 0 1 -13)
+	;		(8 1)
+	;		List of positives from cdr
+	;	Attach car to the list of positives from cdr
+	; Recursive case 2: Car not positive
+	;	(-4 | 8 -2 0 1 -13)
+	;		(8 1)
+	;	Return the list of positives from cdr
+
+	(cond	((null? L)	'( ))
+		((> (car L) 0)	(cons (car L) (list_pos (cdr L))))
+		(else		(list_pos (cdr L))) ))
+
+(define (occurs Item L)
+	; Returns number of occurrences of Item in list L
+	; Example: (occurs 4 '(3 8 10 4 2 4)) returns 2
+	; Example: (occurs 'a '(a b a a c)) returns 3
+
+	; Base case: Empty -> 0
+	; Recursive case 1 - Item matches car
+	; 		(occurs 'a '(a | b a a c)) 
+	;				2 "a"s in the cdr
+	;				add 1 for car
+	;		Add 1 to the number of matches in cdr
+	; Recursive case 2 - Item does not match car
+	;		(occurs 4 '(3 | 8 10 4 2 4))
+	;				2 4s in the cdr
+	;		Return the number of matches in cdr
+
+	(cond	((null? L)	0)
+		((equal? Item (car L))
+				(+ 1 (occurs Item (cdr L)))) 
+		(else
+				(occurs Item (cdr L))) ))
+
+(define (state_capital State L)
+	; Return capital of State in list L
+	; L is a list of state-capital pairs.
+	; Example:(state_capital 'nj '((nj trenton) (md annapolis) (de dover)))
+	; 	return trenton
+	; Example:(state_capital 'md '((nj trenton) (md annapolis) (de dover)))
+	; 	return annapolis
+	; Example:(state_capital 'qc '((nj trenton) (md annapolis) (de dover)))
+	; 	return none
+	; Case 1 - Empty: none
+	; Case 2 - Nonempty, Match at head: Return first capital
+	; Case 3 - Nonempty, No match at head:  Look in cdr
+	(cond	((null? L)			'none)
+		((equal? State (caar L))	(cadar L))
+		(else				(state_capital State (cdr L)))))
+

@@ -1,0 +1,70 @@
+#! /bin/bash
+
+# profile - profile a directory
+#
+# D Provine with a cast of dozens, 6 December 2016
+
+# We can take one folder, which will be in $1
+
+(( numdirs = 0 ))
+(( exes = 0 ))
+(( total = 0 ))
+(( backups = 0 ))
+(( noreads = 0 ))
+
+# if no argument given, use current directory
+if [ $# -eq 0 ]; then
+    thedir=.
+else
+    thedir=$1
+fi
+
+# make sure it's a directory
+if [ ! -d $thedir ]; then
+    echo "$thedir is not a directory"
+    exit 1
+fi
+
+# make sure it's readable
+if [ ! -r $thedir ]; then
+    echo "$thedir is not readable"
+    exit 1
+fi
+
+numfiles=$(ls -a $thedir | wc -l)
+if [ $numfiles -eq 2 ]; then
+    echo "$thedir is empty"
+    exit 0
+fi
+
+
+for file in $thedir/*
+do
+    (( total+= 1 ))
+
+    if [ ! -r $file ]; then
+        (( noreads += 1 ))
+    fi
+
+    if [ -d $file ] ; then
+        (( numdirs += 1 ))
+        ./profile $file
+    elif [ -x $file ]; then
+        (( exes += 1 ))
+    fi
+
+    discardme=$(echo $file | grep -q '~$')
+    if (( $? == 0 )); then
+        (( backups += 1 ))
+    fi
+done
+    
+echo "$thedir :"
+echo "  Total files: $total"
+echo "   Unreadable: $noreads"
+echo "Emacs Backups: $backups"
+echo "  Directories: $numdirs"
+echo "  Executables: $exes"
+
+
+

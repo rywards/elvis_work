@@ -1,0 +1,4 @@
+(define (sumlist L)
+	; REturns the sum of the numbers in L
+	(cond ((null? L) 0)
+	      (else (+ (car L) (sumlist(cdr L))))

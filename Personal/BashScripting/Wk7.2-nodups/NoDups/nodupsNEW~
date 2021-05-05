@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# String substitution method
+# Checking args
+if [ $# -ne 2 ]; then
+    echo "Number of Args is wrong"
+fi

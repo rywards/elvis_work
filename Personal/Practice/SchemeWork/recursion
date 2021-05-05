@@ -1,0 +1,17 @@
+; scheme recursion example
+; this is what happens when the fuction is ran
+(sumlist '(3 7 4))
+(+ 3 (sumlist '(7 4)))
+(+ 3 (+ 7 (sumlist '(4))))
+(+ 3 (+ 7 (+ 4 (sumlist '( )))))
+
+-----------------------------------
+(+ 3 (+ 7 (+ 4 0)))
+(+ 3 (+ 7 4))
+(+ 3 11)
+14
+
+(define (sumlist L)
+	; Returns the sum of the numbers in L
+	(cond ((null? L) 0)
+	      (else (+ (car L) (sumlist(cdr L))))

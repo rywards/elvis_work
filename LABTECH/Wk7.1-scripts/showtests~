@@ -1,0 +1,39 @@
+#! /bin/bash
+# e is the existence test
+if [ -e $1 ]; then
+    echo "$1 exists"
+# file exists & is owned by the effective user id (usually current user)
+    if [ -O $1 ]; then
+       echo "you own it"
+    fi
+ #readbaility test   
+    if [ -r $1 ]; then
+       echo "you can read it"
+    fi
+    #writability test
+    if [ -w $1 ]; then
+       echo "you can write it"
+    fi
+    #directory test
+    if [ -de $1 ]; then
+	echo "it's a directory"
+    fi
+    #regular file test
+    if [ -f $1 ]; then
+	echo "it's a regular file"
+    fi
+    #size test, true if size > 0
+    if [ -s $1 ]; then
+	echo "it's not empty"
+    fi
+    #! operator reverses the test.  So they return true if condition is false
+    if [ ! -s $1 ]; then
+	echo "it's empty"
+    fi
+    #Executabilty test
+    if [ -x $1 ]; then
+	echo "it's executable"
+    fi
+else
+    echo "No file $1"
+fi

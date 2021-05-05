@@ -1,0 +1,11 @@
+(cond (A --)
+	(else	(cond (B --)
+			(else	(cond (C --)
+				(else --))))))
+
+BETTER:
+
+(cond	(A --)
+	(B --)
+	(C --)
+	(else --))

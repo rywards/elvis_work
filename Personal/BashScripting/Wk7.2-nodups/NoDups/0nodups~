@@ -1,0 +1,47 @@
+#! /bin/bash
+
+# String substitution method
+# Checking args
+# Double parens for MATHEMATICAL/NUMBER comparison ONLY
+if (( $# != 2 )); then
+    echo "Number of Args is wrong."
+    exit 1
+fi
+
+# These are checking to make sure the args are directories
+# $1 is the first arg
+if [ ! -d $1 ]; then
+    echo "$1 is not a directory."
+    exit 1
+fi
+
+# $2 is the second arg
+if [ ! -d $2 ]; then
+    echo "$2 is not a directory."
+    exit 1
+fi
+
+# String check we use single equals
+if (( $1 = $2 )); then
+    echo "Same directory specified twice. Disaster results."
+fi
+
+
+# Don't need double quotes for the argument
+for file in $1/*
+do
+    fileName=$(basename $file)
+    if [ -e $2/$filename ]; then
+	cmp -s $1/$fileName $2/$fileName # fills $? with exit status
+	status=$? # saving exit status of cmp so it doesn't change
+	if (( $status == 0 )); then
+	    # Double quotes allow expansions in the variables in the echo
+	    echo "$1/$fileName : $2/fileName matches - removing from $2"
+	elif (( $status == 1)); then
+	    echo "$1/$fileName : $2/$fileName exists but contents differ."
+	fi
+    else
+	echo "$1/$fileName : no $fileName in $2"
+    fi
+    
+done

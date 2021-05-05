@@ -1,0 +1,115 @@
+Bash Scripting Basics
+
+A shell script is simply a collection of instructions for a Unix shell,
+but instead of typing them in one at a time, to a prompt, you put them
+together in a file to make a program.  (MS-DOS batch files are similar.)
+
+On a Unix machine, any script can specify what program will run it.
+The first line -- before any comments, before any blank lines,
+before any blank spaces, the very first line -- says how the script is
+to be run.
+
+"#! /bin/python" will use the Python interpreter, "#! /bin/perl" will
+use Perl, "#! /bin/csh" uses the C-shell.
+
+We'll be using "#! /bin/bash".
+
+Any line that begins with a #, and blank lines, are ignored.  This lets
+you put in whitespace and comments.  (But note that you can't put a
+comment before the #! line; that has to come first.)
+
+Beyond that, you can just put in regular shell commands that you
+would type, and they will be executed in order.
+
+
+
+Variables can be assigned using "=", but don't use spaces:
+
+foo=testing
+
+Variables can be read using a $
+
+echo $foo
+
+
+
+Math can be done using double parens around an expression (spaces
+are allowed).
+
+(( foo = 1 ))
+(( foo += 1 ))
+(( baz = 9 ))
+(( bar = $foo + $baz ))
+
+
+
+Some useful built-in Bash script variables are:
+
+   $0 - command name
+   $1 - first argument
+   $2 - second argument
+   $@ - array of all arguments
+
+   $* - all arguments as a string (default: separated by space)
+ $IFS - "internal field separator".  A string of characters used to
+        separate arguments.  Default is " \t\n"; $IFS[0] is used
+        when printing $*.
+
+   $# - count of how many arguments were received
+
+   $? - return value of last command run
+
+
+
+
+
+The basic structures are:
+
+    for variable in list
+    do
+          statements
+    done
+
+The "list" can be an array ("$@" matches all the arguments on the
+command line to the shell), or a shell expansion (such as "*" or
+other filename matches), or the result of a shell command made with
+a command substitution using $().
+
+
+
+    while [ condition ]
+    do
+          statements
+    done
+
+
+    if [ condition ]
+    then
+          statements
+    else
+          statements
+    fi
+
+The "condition" can be either string or mathematical comparison.
+     String is done using symbols:  <    >    <=    >=    =    !=
+ Math is done using abbreviations: -lt  -gt  -le   -ge   -eq   -ne
+Math in double parens uses symbols:  <    >    <=    >=   ==    !=
+  (note double-paren math condition uses "==")
+
+
+
+This last can be used with program return values:
+
+    [run some command]
+    if [ $? -eq 0 ]
+    then
+       # the command worked
+    else
+       # the command failed
+    fi
+
+
+Note that many programs have different return values for different kinds
+of errors; check the man pages.
+
+

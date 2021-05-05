@@ -1,0 +1,44 @@
+% all_pos(+L)
+% All of the numbers in list L are positive.
+% Example: all_pos([2, 4, 6]) should succeed, but
+% all_pos([2, -4, 6]) should fail.
+% Nonempty case: All the numbers in a list are positive if the head is
+% 	positive and all the numbers in the tail are positive.
+% Empty case:  All the (nonexistent) numbers in the empty list are positive.
+%	(So, succeed.)
+
+all_pos([ ]).
+all_pos([ H | T ]) :- H > 0, all_pos(T).
+
+% has_pos(+L)
+% At least one of the numbers in list L is positive.
+% Case 1:  The list contains a positive number if the head is positive.
+% Case 2:  The list contains a positive number if the tail contains a
+% 	positive number.
+
+has_pos([ H | _ ]) :- H > 0.
+has_pos([ _ | T ]) :- has_pos(T).
+
+% sum_list(+L, -Sum)
+% Sum is the sum of the numbers in list L
+% Example: sum_list([2, 4, 6], X) succeeds with X = 12
+% Case 1:  Empty: sum is 0
+% Case 2:  Nonempty:  Add head to sum of the tail
+
+sum_list([ ], 0).
+sum_list([ H | T ], Sum) :-
+	sum_list(T, TSum),
+	Sum is H + TSum.
+
+% state_capital(+State, +InfoList, -Capital) 
+% Capital is the capital of State in InfoList. 
+% InfoList is a list of [State, Capital] pairs. 
+% Fail if State is not in InfoList.
+% Example: state_capital(nj, [[nj, trenton], [de, dover], [md, annapolis]], X) 
+% should succeed with X = nj.
+% Case 1:  Match at head:  answer is the first capital in the list
+% Case 2:  No match at head:  look in tail
+
+state_capital(State, [ [State, Capital] | _ ], Capital).
+state_capital(State, [ _ | T ], Capital) :- state_capital(State, T, Capital).
+

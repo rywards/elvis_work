@@ -1,0 +1,41 @@
+Bugs in grammar:
+1. Need to allow lots of parameters
+2. No commas
+3. No parentheses
+4. No < > around ByVal, ByRef
+Observation:  Could combine ByVal
+and ByRef rules with |
+
+Assume that rules already exist that
+define <identifier> and <type_id>.
+
+Fixes - Idea 1
+<parameter_list_declaration> ->
+	({parameter_passing_method> <identifier>} As <type_id>)
+
+Fixes - Idea 2
+<parameter_list_declaration> →
+	( <parameter_passing_method> <identifier> As <type_id>
+	[ { , <parameter_passing_method> <identifier> As <type_id> } ] )
+
+Fixes - Idea 3
+<parameter_list_declaration> ->
+	{ ( <parameter_passing_method> <identifier> As <type_id>), }
+
+Fixes - Idea 4
+<parameter_list_declaration> → 
+	( <parameter_passing_method> <identifier> As <type_id> 
+	[ { , <parameter_passing_method> <identifier> As <type_id>}] )
+
+Fixes - Revised idea 2/4
+<parameter_list_declaration> → 
+	( [ <parameter_passing_method> <identifier> As <type_id> 
+	    { , <parameter_passing_method> <identifier> As <type_id>}] )
+
+
+Bugs in Syntax Diagram:
+1.  No repetition
+2.  No commas
+3.  ( and ) nodes should be circles
+
+

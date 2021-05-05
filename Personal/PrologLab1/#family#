@@ -1,0 +1,12 @@
+spouse(ryan, jamie).
+parent(hazel, andrea).
+parent(andrea, ryan).
+parent(andrea, rachel).
+parent(andrea, sarah).
+parent(scott, ryan).
+parent(scott, rachel).
+parent(scott, sarah).
+
+sibling(X, Y) :- parent(P, X), parent(P, Y).
+grandparent(X, Y) :- parent(X, parent(X, Y)).
+child(X, Y) :- parent(Y, X).

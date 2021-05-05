@@ -1,0 +1,8 @@
+% Prolog lab 2 Ryan Edwards
+% Number classification
+classify(N, big) :- N > 100.
+classify(N, medium) :- N >= 50, N =< 100.
+classify(N, small) :- N < 50.
+
+contains_big([H | _]) :- classify(H, big).
+contains_big([_ | T]) :- contains_big(T).

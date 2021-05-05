@@ -1,0 +1,53 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.2
+date	2020.04.07.13.45.18;	author edward74;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2020.04.07.13.44.03;	author edward74;	state Exp;
+branches;
+next	;
+
+
+desc
+@Adding rcsid and radian functionality
+@
+
+
+1.2
+log
+@Added rcsid and radians; version 1.1 didn't have it.
+@
+text
+@/* sine.c - part of the "trig" project
+ *
+ * DFP
+ */
+
+#include <stdio.h>
+#include <math.h>
+
+void sine(double angle)
+{
+  double angleRad=(angle * M_PI)/180;
+  printf("sin(%lf) = %lf\n", angle, sin(angleRad));
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d11 2
+a12 1
+  printf("sin(%lf) = %lf\n", angle, sin(angle));
+@

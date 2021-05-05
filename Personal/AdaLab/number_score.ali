@@ -1,0 +1,57 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U number_score%b	number_score.adb	7cbf7066 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20201125115753 76789da1 ada%s
+D a-except.ads		20201125115753 a7106115 ada.exceptions%s
+D a-inteio.ads		20201125115753 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20201125115753 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20201125115753 119b8fb3 ada.streams%s
+D a-tags.ads		20201125115753 491b781d ada.tags%s
+D a-textio.ads		20201125115753 aef4d56d ada.text_io%s
+D a-tiinio.ads		20201125115753 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20201125115753 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20201125115753 5ab55268 interfaces%s
+D i-cstrea.ads		20201125115753 e53d8b8e interfaces.c_streams%s
+D number_score.adb	20210315171934 24002caf number_score%b
+D system.ads		20201125115753 4635ec04 system%s
+D s-crtl.ads		20201125115753 0ebbdb71 system.crtl%s
+D s-exctab.ads		20201125115753 54135002 system.exception_table%s
+D s-ficobl.ads		20201125115753 078245e4 system.file_control_block%s
+D s-parame.ads		20201125115753 48ec542b system.parameters%s
+D s-secsta.ads		20201125115753 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20201125115753 a7318a92 system.soft_links%s
+D s-stache.ads		20201125115753 a37c21ec system.stack_checking%s
+D s-stalib.ads		20201125115753 09bd3940 system.standard_library%s
+D s-stoele.ads		20201125115753 2dc34a04 system.storage_elements%s
+D s-traent.ads		20201125115753 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20201125115753 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20201125115753 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [number_score standard 6 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|3r6 3r19 4r5 4r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|3w23 4r22
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|3w10 4r9
+86I12*Field{integer}
+X 8 a-tiinio.ads
+59U14*Get 12|17s9[3|18]
+80U14*Put 12|32s9[3|18]
+82i7 Width{7|86I12} 12|32r20[3|18]
+X 12 number_score.adb
+6U11*Number_Score 6b11 35l5 35t17
+9i11 readNum{integer} 14m9 17m13 18r12 24r12 28r12
+10i11 score{integer} 15m9 19m12 19r21 21m12 21r21 25m12 25r21 29m12 29r21
+. 32r13
+

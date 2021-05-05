@@ -1,0 +1,8 @@
+#! /bin/bash
+#  ^^^^^^^
+# This is where the bash interpreter is located
+# Homer J Simpson, Springfield, ??
+
+name=Homer
+echo "Hello $USER"
+

@@ -1,0 +1,71 @@
+#! /bin/bash
+
+# lowercasify -
+#
+# D Provine, 18 April 2017
+# Modified: Jake Levy April 2019
+
+#  string substitutions that are available on newer versions of bash can
+# use "String substitution" variables in some places where they previously
+#would have otherwise used if/else statements.  For example:
+
+thedir=${1:-.}
+
+# replaces the entire if/else below, resulting in more succinct code.
+
+# use current folder if none named
+#if [ $# -eq 0 ]; then
+ #   thedir=.
+#else  
+#    thedir=$1
+#fi
+
+
+
+# Breaking strings into substrings is powerful but cryptic.
+#
+# ${variable%pattern} -> remove the smallest suffix that matches pattern
+# ${variable%%pattern} -> remove the biggest suffix that matches pattern
+#
+# ${variable#pattern} -> remove the smallest prefix that matches pattern
+# ${variable##pattern} -> remove the biggest prefix that matches pattern
+#
+# EXAMPLES:
+#    
+#    bash-3.2$ filename=/a/b/c.d/e.f
+#    bash-3.2$ echo ${filename%.*}      everything before last "." (root)
+#    /a/b/c.d/e
+#    bash-3.2$ echo ${filename%%.*}     everything before first "."
+#    /a/b/c
+#    bash-3.2$ echo ${filename#*.}      everything after first "."
+#    d/e.f
+#    bash-3.2$ echo ${filename##*.}     everything after last "." (extension)
+#    f
+#    bash-3.2$ echo ${filename%/*}      everything before last "/" (directory)
+#    /a/b/c.d
+#    bash-3.2$ echo ${filename#*/}      everything after first slash
+#    a/b/c.d/e.f
+#    bash-3.2$ echo ${filename##*/}     everything after last slash (filename)
+#    e.f
+#    bash-3.2$
+
+for file in $thedir/*; do
+
+    # ignore files with lowercase letters
+    uppername=$(echo ${file##*/} | tr a-z A-Z)
+
+    if [ ${file##*/} = $uppername ]; then
+
+        lowername=$(echo ${file##*/} | tr A-Z a-z)
+
+        # don't stomp any files that exist
+        if [ -e $thedir/$lowername ]; then
+            echo $file : $lowername exists
+        else
+            echo "mv -i $file $thedir/$lowername"
+        fi
+    else
+        echo "$file not all-uppercase"
+    fi
+
+done

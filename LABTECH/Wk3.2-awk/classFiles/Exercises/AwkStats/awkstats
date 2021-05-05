@@ -1,0 +1,50 @@
+#! /bin/awk -f
+# Jake Levy
+
+#Someone asked me about input validation and for AwkStats you don't need to
+ #worry about it really but I figured I'd provide a starter file because
+ #it would be useful for you to see it and because its almost impossible to
+ #cover everything for awk in class
+
+#  I've included some detailed comments
+#to help explain some things you need.  For a full explanation you may need
+#to review the other examples.
+
+#/pattern/ is a regex pattern.  used in the pattern portion of awk's
+#'pattern{instruction}' syntax, it means "only apply this instruction
+# to lines that have a match"
+
+# ~ is the pattern matching operator
+# it returns true if the specified positional variable contains a match
+# to the regex pattern (delimited by /) on the right of the operator
+# awk is loosely typed, meaning variables are what you treat them as
+#if you can add to it, its a numeric type, if you can concatenate to it, its
+#String type, etc
+
+# variables do not require initialization
+
+#other than that writing AWK is very much like writing C or Java
+# you can use if statements and loops to apply program logic to a given line
+
+
+## if some commands look similar to C functions thats because they ARE
+#awk expands certain commands (print, printf, etc) to their C equivalent
+#when it is interpreted
+
+
+/[0-9]+/{ #if the line contains any numbers apply this whole instruction
+    
+    # NF is the number of fields, $NF is the value of the last field
+    # NR is the current line number
+    
+    if ($0 != 0 &&  NF == 1){#if the line is not 0 and there's only 1 field
+	if ($0 !~ /[A-Za-z]/){  #if it contains no letters (ideally we'd expand
+	                        #this to include punctuation as well)
+	    sum+= $0  #add to the sum
+	}
+    } else if ($0 == 0){
+	exit(0)# exits without error
+    }
+}
+
+END{ print sum}

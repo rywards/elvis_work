@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#sample script from Learning the Bash Shell, 3rd. Ed
+#Demonstrates a basic use of the postional Parameter
+
+ sort $1 -k1rn,1 | head

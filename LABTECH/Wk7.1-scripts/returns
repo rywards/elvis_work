@@ -1,0 +1,50 @@
+#! /bin/bash
+
+echo "This script demonstrates checking commands that are run."
+
+echo 
+echo "First, set a variable with command substitution."
+
+# note: no space around = when assigning!
+myname=$(whoami)
+
+echo -n "You are "
+echo $myname | tr "[a-z]" "[A-Z]"
+
+if [ "$myname" = "levyj63" ]; then  # Note single =, not ==
+    echo "Welcome, Mighty One!"
+#    echo "For Scott"
+else
+    echo "Whaddya want?"
+fi
+
+
+echo
+echo "Second, check value returned from main()"
+echo "when main() returns or calls exit(), value is stored in $?"
+
+for file in   . zorgab #note that we can list each item to checked	    
+do
+    ls -d $file
+    if [ $? -eq 0 ]; then
+	echo "ls successful for $file"
+    else
+	echo "Couldn't list $file"
+    fi
+done
+
+ 
+echo
+echo "Repeating the above with double parens"
+
+for file in   . zorgab 
+do
+    ls -d $file
+    if (( $? == 0)); then # note "=="
+	echo "ls successful for $file"
+    else
+	echo "Couldn't list $file"
+    fi
+done
+
+ 

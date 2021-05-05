@@ -1,0 +1,2 @@
+run gnatmakes (adafile) to generate
+the executable

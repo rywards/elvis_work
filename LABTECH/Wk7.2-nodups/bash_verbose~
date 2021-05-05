@@ -1,0 +1,13 @@
+#! /bin/bash 
+
+# This command turns on extra debugging information;
+# commands are printed before being is run.
+# Complex commands are printed as a group.
+ set -o verbose
+
+# Compare this script with bash_xtrace
+
+for x in *
+d
+    echo $x
+done

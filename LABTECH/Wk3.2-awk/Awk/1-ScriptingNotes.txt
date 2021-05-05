@@ -1,0 +1,122 @@
+Scripts are simply text files that are translated, one line at a time, by
+language specific "interpreters". Different scripting  languages use different
+interpreters.
+
+Awk (or really any) script files must specify that they are going to be read by
+their language interpreter and so the first line of every single script file
+on Elvis *must* start with
+
+   #! /bin/awk  <--- this is specifically for Awk Scripts, so it points to awk
+   ^       ^
+"shebang" Path to Interpreter
+
+A bash script (Which we will cover in Week 7) would have
+
+
+   #! /bin/bash  <--- this points to the installed location of bash interpreter
+   ^       ^
+"shebang" Path to Interpreter
+
+
+
+The #! **must** be the first characters on line 1 (no spaces, tabs, or anything
+else should precede them, NOTHING). It is considered to be a "Magic number" and
+is the same for almost all scripts in Unix.
+
+If you have an awk interpreter on your home machine, its likely that it is
+located somewhere other than the Elvis location.  
+
+To specify awk should read its instructions from a file we have invoke awk
+on the commandline and then "point it" to the source code we wish to execute,
+using the -f flag (Note the difference between -F and -f).
+
+levyj63 %>   awk -f someFile.awk  inputFile
+      	     	  ^ 	^	    ^
+           "use this code file"	"to process this file"
+
+However, we put the source code into a file to reduce the commandline
+complexity.  So we can do better.  We can exclude the -f flag from the
+command line if we put it at the top of our script file like so:
+
+#! /bin/awk -f
+	     ^
+	 tells the interpreter that commands are coming from this file
+
+If we do this, we can simply our call to awk as follows:
+
+levyj63 %>  ./someFile.awk inputFile
+
+This says the same thing as the previous line, without the need for the -f
+flag.
+
+Awk script files use generally the same pattern{command} syntax as command line
+awk except that the quotes are not necessary.  Using a script file, rather
+than command line awk can make more complicated scripts readable and easier to
+understand.
+
+Beyond the NR, NF, and regex patterns, there are other special
+Patterns as well.
+
+
+BEGIN{} Matches to before ANY line has been read in
+	It runs its instructions before anything happens.  Use BEGIN to set up
+	variables, Field Separator, and other stuff that will be necessary
+	through out the program.
+	
+END{} Matches to AFTER ALL lines have been read in.
+      Use END to print results or other special ENDING data (Tallies, averages,
+      etc.)
+
+We have to specify the "field separator" differently.  In commandline awk,
+we use a "flag" (-F) to specify.  In Awk scripts we use the named special
+variable FS.
+
+###########################
+EXAMPLE (Address printing from class):
+#! /bin/awk -f
+#Start of Awk Script
+
+BEGIN{
+FS=","
+}  #sets the Field Separator, see below
+
+NR>1 {
+print $2" "$1"\n"$3"\n"$4", "$5" "$6
+SUM+=1
+}  # prints formatted addresses 
+
+END{print SUM}
+################################
+Try copying this file into some testfile named awkTest, in YOUR
+Wk3.2-awk/classFiles/Exercises directory. Make sure you also have the Addresses
+File, then Run it.  Refer back to the file as you read the next section:
+
+      ./awkTest Addresses 
+
+VARIABLES in AWK
+
+Variables in awk are different from those in C/C++/Java and other statically,
+strongly typed languages.   In those, variables are explicitly typed.
+A String is a String and cannot be anything else. Same with ints/floats/chars
+One data type cannot be substituted for another (except in VERY specific
+circumstances).
+
+In awk (and other loosely, dynamically typed languages), variables are what you
+treat them as.  Note in the above example, SUM is never explicitly typed to
+int, double, float, or anything else. It was never even initialized!
+This is NOT an error.  In awk variables don't exist (unless they are
+pre-defined like FS) until you use them.  Once you start using them, their
+type is determined by the context.  I began adding to SUM, so it **must** be a
+numerical type. If I can print it, it will be treated as a string type. Because
+I did number stuff to it, it was automatically initialized to 0 (default number
+value).  If I try to print a variable without initialization, it will default
+to be an EMPTY STRING (default String value).
+
+We can also pass variables in from the command line to initialize variable we
+are using in a file:
+
+    ./awkTest -v SUM=10 Addresses
+
+This will run awkTest again but this time, it will initialize SUM to 10.  
+We can initialize as many variables on the command line as we need to but
+each requires a -v flag in front of it.

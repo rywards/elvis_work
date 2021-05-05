@@ -1,0 +1,30 @@
+same_2_4([_, Y, _, Y | _]).
+
+starts_a_b([a | _]). 
+starts_a_b([b | _]).
+
+average(X, Y, Z, Avg) :- Avg is (X + Y + Z) / 3.
+
+monus(X, Y, 0) :- X =< Y.
+monus(X, Y, Diff) :- X > Y, Diff is X - Y.
+
+% new_delete(+Item, +OldList, -NewList)
+% NewList is the result of deleting the first occurrence of Item from OldList.
+% Succeed with list unchanged if Item isn't found.
+% Example: new_delete(a, [b, a, n, a, n, a], Result)
+%	succeeds with Result = [b, n, a, n, a]
+% Example: new_delete(a, [a, b, c], Result) succeeds with Result = [b, c]
+% Case 1: Empty -> [ ]
+% Case 2: Match at head:  result is tail of list
+% Case 3: No match at head:  Glue head onto result of deleting the first
+% occurrence of Item from the tail
+%	[ b | a,n,a,n,a]
+%	b     [n,a,n,a]		-> [b,n,a,n,a]
+%	H	NewL		   [H | NewL]
+
+new_delete(_, [ ], [ ]).
+new_delete(Item, [ Item | T ], T).
+new_delete(Item, [ H | T ], [H | NewL] ) :-
+	Item \== H,
+	new_delete(Item, T, NewL).
+

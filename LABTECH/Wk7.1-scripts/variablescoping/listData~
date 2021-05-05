@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#Modification of sample script from Learning the Bash Shell, 3rd. Ed, Task 4-1
+# Jake Levy
+# Apr 2019
+
+
+#Demonstrates a basic use of the postional Parameters
+# and the difference between the postional params for
+# the script itself and for functions and scoping of
+# positional parameters
+
+# like the script itself, functions have their own local set of postional
+# parameters.  These are NOT the same as those in the overall script
+function simpleFunction(){
+    echo $1  #echo positional 1 parameter of function
+
+    echo $2
+    
+    echo "Albums Artist"
+     echo $0
+}
+ simpleFunction $1
+ sort $1 -k1rn,1 | head #use the value of script positional parameter as input
+ echo $0
+ echo $2
+ #$0 is always the name of the script, even if used inside a function, try it
+
+ #you can check for functions defined in your shell session with
+ # declare -f (with their definition)
+ # or
+ # declare -F (without their definition)

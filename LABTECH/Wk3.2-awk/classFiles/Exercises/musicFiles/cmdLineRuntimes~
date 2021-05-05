@@ -1,0 +1,45 @@
+#! /bin/awk -f
+#Jake Levy
+#August 2019
+
+#a file for finding all songs in finalMusicOut.txt, under len minutes,
+# where len is passed in as a command line variable
+
+# NOTE: Any variable in an awk file that has not been explicitly defined
+#  is automatically 0, unless  it is given an initialization value on the
+# command line, with the -v flag.
+
+# USAGE EXAMPLE: ./cmdLineRuntimes -v len=6 finalMusicOut.txt
+# The example above will find all all songs that are less than 6 minutes
+# in length.
+# If you run this code without passing in a value for len, then len is 0
+# and only the title line will print.
+
+ BEGIN{SUM=0}
+(NR==1){
+ 
+    printf("%20s\t%10s\n", $1, $5)
+}
+
+(NR > 1){
+    
+
+    orig = $0 # store the original record
+
+   
+    FS=":" #update field separator  
+    $0 = $5;  #Re-set record to be the 5th column (minutes:seconds)
+    totalRuntime = ($1 *60) + $2
+    if (totalRuntime >= len && totalRuntime < len2 ){  #$1 grabs the first part of 5th column
+	SUM += 1;
+	 FS="\t";    #reset the field separator
+	 $0 = orig;  #re-read the original line
+	print $1, "\t", $5  #print the first (Name)
+	                    #and fifth (Runtime) columns
+     } else{
+	  FS = "\t"  #reset the field separator for all othe records
+     }
+}
+END{ print SUM," records found"}    
+   
+

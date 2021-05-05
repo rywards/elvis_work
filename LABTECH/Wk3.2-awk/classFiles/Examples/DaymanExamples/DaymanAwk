@@ -1,0 +1,10 @@
+#! /bin/awk -f
+
+/Dayman/{
+    for (i = 1; i <= NF; i++){ #have to use traditional for, $0 is not an array
+	if ($i == "Dayman"){
+	    $i = "Troll"
+    }
+       print
+    }
+}

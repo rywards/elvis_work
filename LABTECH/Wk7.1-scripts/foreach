@@ -1,0 +1,28 @@
+#! /bin/bash
+
+# note different strength of quotations
+echo "You typed in $# arguments."
+echo 'You typed in $# arguments.'
+
+
+# $@ is array of arguments
+echo
+echo 'looping on $@'
+for arg in $@
+do
+    echo $arg
+done
+
+
+# $* is all arguments as a string
+echo
+echo 'printing $*'
+echo $*
+
+echo
+echo 'Here is a list of files'
+
+for file in  *
+do
+    echo $file
+done

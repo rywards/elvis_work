@@ -1,0 +1,19 @@
+(define (num_pos L)
+	; Return the number of positive numbers in list L
+	(cond	((null? L)		0)
+		((> (car L) 0) 		(+ (num_pos (cdr L)) 1))
+		(else			(num_pos (cdr L))) ))
+
+(define (list_pos L)
+	; Return a list of the positive numbers in list L
+	(cond	((null? L)		'( ))
+		((> (car L) 0) 		(cons (car L) (list_pos (cdr L))))
+		(else			(list_pos (cdr L))) ))
+
+(define (state_capital State L)
+	; Return the capital of State in list L
+	; [ Describe data structure ]
+	(cond	((null? L)		'none)
+		((eq? State (caar L))	(cadar L))
+		(else			(state_capital State (cdr L))) ))
+

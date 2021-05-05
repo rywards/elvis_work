@@ -1,0 +1,10 @@
+wolf none
+wolf armor
+dragon armor
+alien insulation
+tiger armor
+dragon amulet insulation armor
+dragon none
+dragon insulation
+cobra insulation
+alien amulet

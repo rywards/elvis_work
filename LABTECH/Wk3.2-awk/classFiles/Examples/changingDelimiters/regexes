@@ -1,0 +1,28 @@
+#! /bin/awk -f
+#Jake Levy
+#Computer Lab Techniques
+# a Program to demonstrate patterns and regex in awk programming language
+#if a line has colons, we will use colons as the delimiters.  Otherwise,
+# we will use spaces (the default).
+#regexes are defined within slashes as such:  /regex/
+# we cn use the "pattern matching" operator (~) to compare a line or field
+# against the defined regex.  The operator will return true if the specified
+#field(line) contains the pattern.
+
+
+
+NR>1{ #skip the title line
+    
+    if  ($0 ~/:/ ){ #check the line to see if it has a colon
+	FS=":"; #set the Input Field Separator to :
+	$0=$0 # reread the line with new IFS
+	print $3
+ } else{
+	    
+	FS=" " #reset the IFS value to " "
+	$0=$0
+	print $3
+ }	
+      
+      
+}
